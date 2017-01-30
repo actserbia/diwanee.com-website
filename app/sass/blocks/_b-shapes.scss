@@ -1,0 +1,13 @@
+.b-line--bottom {
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom:-42%;
+    width: 60px;
+    background: red;
+    height: 3px;
+    left:50%;
+    transform:translateX(-50%);
+    content:"";
+  }
+}

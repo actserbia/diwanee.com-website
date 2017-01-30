@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1691 1.333 1600 5016.666">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #ededed;
+        stroke-linecap: square;
+        stroke-width: 1px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_214" data-name="Path 214" class="cls-1" d="M-480.5-5780.833h1600V-10797.5h-1600Z" transform="translate(480.5 10797.499)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_193" data-name="Group 193" transform="translate(2171.5 0.833)">
+    <g id="Group_192" data-name="Group 192" class="cls-2" transform="translate(-480.5 0.5)">
+      <g id="Group_189" data-name="Group 189" transform="translate(401.25 -3.262)">
+        <path id="Path_211" data-name="Path 211" class="cls-3" d="M.5.873V4565.382" transform="translate(-0.5 -0.873)"/>
+      </g>
+      <g id="Group_190" data-name="Group 190" transform="translate(800.417 -3.152)">
+        <path id="Path_212" data-name="Path 212" class="cls-3" d="M.5.015V4885.906" transform="translate(-0.5 -0.015)"/>
+      </g>
+      <g id="Group_191" data-name="Group 191" transform="translate(1201.25 -3.151)">
+        <path id="Path_213" data-name="Path 213" class="cls-3" d="M1.5.115V4945.1" transform="translate(-1.5 -0.115)"/>
+      </g>
+    </g>
+  </g>
+</svg>

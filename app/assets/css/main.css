@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  overflow-x: hidden;
+  line-height: 1; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+a:hover, a:active, a:focus {
+  outline: none;
+  color: inherit; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Playfair Display", serif;
+  font-size: 16px; }
+  @media (max-width: 2050px) {
+    html {
+      font-size: 16px; } }
+  @media (max-width: 700px) {
+    html {
+      font-size: 16px; } }
+
+h1 {
+  font-size: 47px;
+  line-height: 58px;
+  text-align: center; }
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold; }
+
+h3 {
+  font-size: 30px;
+  line-height: 43px;
+  text-align: center; }
+
+strong {
+  font-weight: bold; }
+
+.wrapper {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  max-width: 800px;
+  position: relative; }
+  .wrapper:before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    background: red;
+    height: 100%;
+    left: 49.5%; }
+
+.header {
+  width: 100%;
+  position: absolute; }
+
+.header-social {
+  float: right;
+  margin-top: 20px;
+  margin-right: 13.9%; }
+
+.header-social__item {
+  display: inline-block; }
+  .header-social__item img {
+    height: 30px;
+    margin: 4px 10px; }
+    .header-social__item img.insta {
+      height: 26px;
+      margin-right: 14px; }
+
+.b-landing {
+  display: block;
+  margin-bottom: 32.2%; }
+
+.b-landing__logo {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 38%;
+  margin-bottom: 10%; }
+
+.b-line--bottom, .b-landing {
+  position: relative; }
+  .b-line--bottom:after, .b-landing:after {
+    position: absolute;
+    bottom: -42%;
+    width: 60px;
+    background: red;
+    height: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: ""; }
+
+.b-brands {
+  display: block;
+  padding-top: 14%;
+  margin-bottom: 32%;
+  overflow: hidden; }
+  .b-brands > a {
+    display: block;
+    float: left; }
+
+.b-brands__item {
+  width: 50%;
+  float: left;
+  padding-top: 32.5%;
+  position: relative;
+  border: 1px solid red; }
+
+.b-brands__item__logo {
+  width: 46%;
+  position: absolute;
+  left: 27%;
+  top: 24%; }
+
+.b-brands__social {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6%; }
+
+.b-brands__social__item {
+  display: inline-block;
+  width: 30px;
+  margin: 0 8px;
+  text-align: center; }
+  .b-brands__social__item img {
+    height: 27px; }
+  .b-brands__social__item:nth-child(1) img {
+    height: 30px; }
+
+.b-contacts {
+  clear: both; }

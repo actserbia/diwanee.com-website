@@ -1,0 +1,42 @@
+.b-brands {
+  display: block;
+  padding-top: 14%;
+  margin-bottom: 32%;
+  overflow: hidden;
+  &>a {
+    display: block;
+    float: left;
+  }
+}
+.b-brands__item {
+  width: 50%;
+  float: left;
+  padding-top:32.5%;
+  position: relative;
+  border:1px solid red;
+}
+.b-brands__item__logo {
+  width: 46%;
+  position: absolute;
+  left: 27%;
+  top:24%;
+}
+.b-brands__social {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6%;
+}
+.b-brands__social__item {
+  display: inline-block;
+  width: 30px;
+  margin:0 8px;
+  text-align: center;
+  img {
+    height: 27px;
+  }
+  &:nth-child(1){
+    img {
+      height: 30px;
+    }
+  }
+}
