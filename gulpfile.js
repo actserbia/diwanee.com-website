@@ -56,6 +56,7 @@ gulp.task("html", function(){
 // /////////////////////////////////////////////////
 gulp.task('browser-sync', function(){
   browserSync({
+    ghostMode: false,
     server:{
       baseDir:"./app/"
     }

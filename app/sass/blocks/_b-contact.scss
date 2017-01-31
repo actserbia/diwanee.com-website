@@ -9,7 +9,7 @@
   width: 40%;
   float: left;
   h4 {
-    margin-bottom: 8%;
+    margin-bottom: 25px;
     @include breakpoint(mobile) {
       margin-bottom: 4%;
     }

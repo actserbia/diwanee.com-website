@@ -6,6 +6,7 @@
   border-right:1px solid #eee;
   max-width: 800px;
   position: relative;
+  // z-index: -1;
   &:before {
     position: absolute;
     content:'';
@@ -15,8 +16,15 @@
     left:50%;
     z-index: -1;
     // transform:translateX(-5124%);
+
     @include breakpoint(mobile) {
       display: none;
     }
+  }
+  @include breakpoint(tablet) {
+    padding: 0 5%;
+  }
+  @include breakpoint(mobile) {
+    padding:0;
   }
 }

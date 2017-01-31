@@ -6,6 +6,8 @@
   float: right;
   margin-top: 20px;
   margin-right: 13.9%;
+  z-index: 6;
+  position: relative;
   @include breakpoint(mobile) {
     margin-top: 6px;
     margin-right: 4px;
