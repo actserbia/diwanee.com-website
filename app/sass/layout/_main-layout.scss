@@ -2,17 +2,21 @@
   display:block;
   overflow: hidden;
   margin:0 auto;
-  border-left:1px solid red;
-  border-right:1px solid red;
+  border-left:1px solid #eee;
+  border-right:1px solid #eee;
   max-width: 800px;
   position: relative;
   &:before {
     position: absolute;
     content:'';
     width: 1px;
-    background: red;
+    background: #eee;
     height: 100%;
-    left:49.5%;
+    left:50%;
+    z-index: -1;
     // transform:translateX(-5124%);
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
 }

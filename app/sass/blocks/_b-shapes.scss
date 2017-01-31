@@ -9,5 +9,8 @@
     left:50%;
     transform:translateX(-50%);
     content:"";
+    @include breakpoint(mobile) {
+      bottom: -20%;
+    }
   }
 }

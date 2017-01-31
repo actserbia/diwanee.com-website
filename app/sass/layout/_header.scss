@@ -6,6 +6,10 @@
   float: right;
   margin-top: 20px;
   margin-right: 13.9%;
+  @include breakpoint(mobile) {
+    margin-top: 6px;
+    margin-right: 4px;
+  }
 }
 .header-social__item {
   display: inline-block;
