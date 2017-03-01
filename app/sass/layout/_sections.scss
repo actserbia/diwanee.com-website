@@ -1,0 +1,7 @@
+.section {
+  display: block;
+  @extend .clearfix;
+}
+.section--brands {
+  @extend .section;
+}
