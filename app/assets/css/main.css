@@ -161,6 +161,9 @@ strong {
       height: 26px;
       margin-right: 14px; }
 
+.header__logo {
+  bottom: 3%; }
+
 .footer-copy {
   display: block;
   clear: both;
@@ -289,6 +292,9 @@ strong {
     height: 27px; }
   .b-brands__social__item:nth-child(1) img {
     height: 30px; }
+
+.box {
+  transform: scale(1.1) translateY(10px); }
 
 .b-contacts {
   clear: both;
