@@ -1,6 +1,7 @@
 .wrapper {
   display:block;
-  overflow: hidden;
+  // overflow: hidden;
+  @extend .clearfix;
   margin:0 auto;
   border-left:1px solid #eee;
   border-right:1px solid #eee;

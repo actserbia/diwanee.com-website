@@ -1,0 +1,16 @@
+.b-division {
+  display: block;
+  @extend .clearfix;
+}
+.b-division--half {
+  @extend .b-division;
+  .b-division__item {
+    width: 48%;
+    margin-right:2%;
+    float: left;
+    &:last-child {
+      margin-right: 0;
+      margin-left: 2%;
+    }
+  }
+}

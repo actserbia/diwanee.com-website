@@ -1,0 +1,38 @@
+.b-header-slider {
+  display: block;
+  @extend .clearfix;
+  img {
+    width: 100%;
+  }
+}
+.b-header-slider__item {
+  position: relative;
+}
+.b-header-slider__item__info {
+  position: absolute;
+  left:20%;
+  top:50%;
+}
+.slick-arrow{
+  position: absolute;
+  top:50%;
+  z-index: 10;
+
+}
+.slick-prev {
+  right:auto;
+  left:2%;
+}
+.slick-next {
+  right:2%;
+  left:auto;
+}
+.b-header-slider__item__info {
+  color:white;
+  text-align: left;
+  font-family: $text__family--Roboto;
+  h2 {
+    text-align: left;
+  }
+
+}

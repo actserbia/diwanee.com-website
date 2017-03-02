@@ -14,6 +14,7 @@
     <meta property="og:image" content="assets/img/og-share/02.png">
     <meta property="og:site_name" content="Diwanee">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <!-- google analytics -->
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -32,63 +33,145 @@
 
 <body>
   <header class="header">
-    <ul class="header-social">
-      <li class="header-social__item">
-        <a href="https://www.facebook.com/Diwanee" target='_blank'><img src="assets/img/fb-header.svg" alt=""></a>
-      </li>
-      <li class="header-social__item">
-        <a href="https://www.instagram.com/diwaneelife" target='_blank'><img class='insta' src="assets/img/insta-header.svg" alt=""></a>
-      </li>
-      <!-- <li class="header-social__item">
-          <a href="https://twitter.com/diwanee" target='_blank'><img src="assets/img/twitter-head.svg" alt=""></a>
+    <div class="wrapper">
+      <img class="header__logo" src='assets/img/diwanee-logo.svg'>
+      <ul class="header-social">
+        <li class="header-social__item">
+          <a href="https://www.facebook.com/Diwanee" target='_blank'><img src="assets/img/fb-header.svg" alt=""></a>
+        </li>
+        <li class="header-social__item">
+          <a href="https://www.instagram.com/diwaneelife" target='_blank'><img class='insta' src="assets/img/insta-header.svg" alt=""></a>
+        </li>
+        <!-- <li class="header-social__item">
+        <a href="https://twitter.com/diwanee" target='_blank'><img src="assets/img/twitter-head.svg" alt=""></a>
       </li> -->
-    </ul>
-  </header>
-  <div class="header__slider">
-
-  </div>
-  <div class="wrapper">
-    <div class="b-landing">
-      <a href="/"><img class="b-landing__logo" src='assets/img/diwanee-logo.svg'></a>
-      <h1>We are building the future of digital media</h1>
+      </ul>
     </div>
-    <h3><strong>New Website coming soon</strong></h3>
-    <h3>Meanwhile, check out our brands</h3>
+  </header>
+  <div class="wrapper--big">
+    <div class="b-header-slider">
+      <div class="b-header-slider__item">
+        <img src="assets/img/header-yasmina.png" alt="">
+        <div class="b-header-slider__item__info">
+          <h2>Atyab <br>Tabkha</h2>
+          <p>Get my honey come back, sometimes</p>
+          <div class="b-button--red">Rap like that</div>
+        </div>
+      </div>
+      <div class="b-header-slider__item">
+        <img src="assets/img/header-yasmina.png" alt="">
+        <div class="b-header-slider__item__info">
+          <h2>Atyab <br>Tabkha</h2>
+          <p>Get my honey come back, sometimes</p>
+          <div class="b-button--red">Rap like that</div>
+        </div>
+      </div>
+      <div class="b-header-slider__item">
+        <img src="assets/img/header-yasmina.png" alt="">
+        <div class="b-header-slider__item__info">
+          <h2>Atyab <br>Tabkha</h2>
+          <p>Get my honey come back, sometimes</p>
+          <div class="b-button--red">Rap like that</div>
+        </div>
+      </div>
+      <div class="b-header-slider__item">
+        <img src="assets/img/header-yasmina.png" alt="">
+        <div class="b-header-slider__item__info">
+          <h2>Atyab <br>Tabkha</h2>
+          <p>Get my honey come back, sometimes</p>
+          <div class="b-button--red">Rap like that</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="b-landing">
+    <div class="wrapper">
+      <h1>We are building the <br> future of digital media</h1>
+      <p class='b-landing-info'><span>about</span><br>Diwanee is a <br>digital media <br>company</p>
+      <div class="b-division--half">
+        <div class="b-division__item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde pariatur totam at minima dolor, id in ab eligendi eveniet accusantium voluptatem est maiores officiis debitis obcaecati, tempore qui sequi! Corporis eveniet esse, omnis laudantium facilis earum molestiae, libero molestias sed impedit iusto delectus. In quis quasi quaerat, consequuntur atque iure?</p>
+        </div>
+        <div class="b-division__item">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde pariatur totam at minima dolor, id in ab eligendi eveniet accusantium voluptatem est maiores officiis debitis obcaecati, tempore qui sequi! Corporis eveniet esse, omnis laudantium facilis earum molestiae, libero molestias sed impedit iusto delectus. In quis quasi quaerat, consequuntur atque iure?</p>
+        </div>
+      </div>
+      <div class='elem-center'><h2><span>Our</span> <br>Brands</h2></div>
+    </div>
   </div>
   <div class='wrapper--big'>
     <div class="b-brands">
       <div class="b-brands__item blank">
       </div>
       <div class="b-brands__item atyabtabkha">
-        <a href="http://atyabtabkha.3a2ilati.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/at.svg'></a>
+        <a href="http://atyabtabkha.3a2ilati.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-atyabtabkha.svg'></a>
       </div>
       <div class="b-brands__item double">
         <!-- <a href="http://www.warrini.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/warrini.svg'></a> -->
       </div>
-      <div class="b-brands__item duniati">
-        <a href="http://www.3a2ilati.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/3a2ilati.svg'></a>
+      <div class="b-brands__item duniatti">
+        <a href="http://www.3a2ilati.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-duniati.svg'></a>
       </div>
       <div class="b-brands__item yasmina">
-        <a href="http://www.yasmina.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/yasmina.svg'></a>
+        <a href="http://www.yasmina.com/" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-yasmina.svg'></a>
       </div>
-      <div class="b-brands__item 3a2ilati">
-        <a href="https://www.facebook.com/Mashaheeri/" target='_blank'><img class="b-brands__item__logo" src='assets/img/masheri.svg'></a>
+      <div class="b-brands__item azilanti">
+        <a href="https://www.facebook.com/Mashaheeri/" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-3a2ilati.svg'></a>
       </div>
       <div class="b-brands__item blank">
       </div>
       <div class="b-brands__item blank">
       </div>
       <div class="b-brands__item warrini">
-        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/duniati.svg'></a>
+        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-warrini.svg'></a>
       </div>
       <div class="b-brands__item mazyun">
-        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/duniati.svg'></a>
+        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-mazyun.svg'></a>
       </div>
-      <div class="b-brands__item machacheri">
-        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/duniati.svg'></a>
+      <div class="b-brands__item mashasheri">
+        <a href="https://www.youtube.com/user/Duniati" target='_blank'><img class="b-brands__item__logo" src='assets/img/brands/logo-mashasheri.svg'></a>
       </div>
     </div>
   </div>
+  <section class="section--audience">
+    <div class="wrapper">
+      <h2><span>Diwanee</span><br>Audience</h2>
+      <div class="b-audience">
+        <div class="b-audience__item">
+          <img src="assets/img/110.svg" alt="">
+        </div>
+        <div class="b-audience__item">
+          <img src="assets/img/10.svg" alt="">
+        </div>
+        <div class="b-audience__item">
+          <img src="assets/img/37.svg" alt="">
+        </div>
+        <div class="b-audience__item">
+          <img src="assets/img/25.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section--marketing-service">
+    <div class="wrapper">
+      <div class="b-marketing-service--top">
+        <h2><span>Marketing</span><br>Service</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis debitis quod, tempora sunt perferendis saepe ullam nesciunt dolorum quos facilis nobis officia, laudantium illo amet nihil nisi sint soluta. Iste.</p>
+      </div>
+      <div class="b-marketing-service--bottom">
+        <h4>The services include</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, commodi, ratione. Necessitatibus ullam fugiat, repellendus eum corporis inventore deserunt porro velit tempora tenetur, eius ipsam ex modi nostrum est. Facere.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section--showreel">
+    <h2><span>Diwanee</span><br>Showreel</h2>
+    <div class="wrapper--medium">
+        <div class="b-showreel">
+          <video src=""></video>
+        </div>
+    </div>
+  </section>
   <div class="wrapper">
     <footer>
       <div class="b-contacts">
@@ -132,5 +215,6 @@
     </div>
   </footer>
 </div>
+<script src='assets/js/main.min.js'></script>
 </body>
 </html>

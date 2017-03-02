@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  z-index: 99;
   position: absolute;
 }
 .header-social {
@@ -26,4 +27,7 @@
 }
 .header__logo {
   bottom: 3%;
+  width: 14%;
+  left:5%;
+  position: relative;
 }

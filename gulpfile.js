@@ -18,7 +18,7 @@ var gulp = require("gulp"),
 gulp.task("scripts",function(){
     gulp.src([
       "app/bower_components/jquery/dist/jquery.min.js",
-      // "app/bower_components/velocity/velocity.js",
+      "app/bower_components/slick-carousel/slick/slick.js",
       "app/js/**/*.js", '!app/js/**/*.min.js',
     ])
     .pipe(concat('main.js'))

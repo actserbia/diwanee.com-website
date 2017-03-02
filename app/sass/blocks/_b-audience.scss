@@ -1,0 +1,12 @@
+.b-audience {
+  display:block;
+  @extend .clearfix;
+}
+.b-audience__item {
+  width: 50%;
+  float: left;
+  text-align: center;
+  img {
+    width: 80%;
+  }
+}

@@ -1,0 +1,8 @@
+.b-marketing-service {
+  text-align: center;
+  display: block;
+}
+.b-marketing-service--top,
+.b-marketing-service--bottom {
+  @extend .b-marketing-service;
+}

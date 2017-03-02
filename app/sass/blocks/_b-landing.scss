@@ -1,7 +1,14 @@
 .b-landing {
   display:block;
-  margin-bottom: 32.2%;
-  @extend .b-line--bottom;
+  margin-bottom: 7%;
+  h1 {
+    padding-top:10%;
+    padding-bottom: 8%;
+  }
+  // @extend .b-line--bottom;
+  .b-division {
+    margin-bottom: 10%;
+  }
 }
 .b-landing__logo {
   width: 30%;
@@ -13,4 +20,8 @@
     margin-top: 33%;
     width: 60%;
   }
+}
+.b-landing-info {
+  position: relative;
+  left:-10%;
 }
