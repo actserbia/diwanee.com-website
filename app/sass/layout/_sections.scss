@@ -5,3 +5,22 @@
 .section--brands {
   @extend .section;
 }
+.section--audience {
+  h2 {
+    position: relative;
+    left: -61px;
+    top: -27px;
+    margin-bottom: 20%;
+  }
+  margin-bottom:10%;
+  .circle img {
+    width: 200px;
+    margin-left: 45px;
+  }
+}
+.section--showreel {
+  h2 {
+    margin-bottom: 6.6%;
+  }
+  margin-bottom: 17%;
+}

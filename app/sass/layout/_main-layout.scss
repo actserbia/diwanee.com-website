@@ -10,6 +10,7 @@
   // z-index: -1;
   &:before {
     position: absolute;
+    display: none;
     content:'';
     width: 1px;
     background: #eee;
@@ -33,4 +34,13 @@
   display:block;
   max-width: 1600px;
   margin:0 auto;
+}
+.wrapper--medium {
+  @extend .wrapper;
+  max-width: 1300px;
+}
+.wrapper--header {
+  @extend .wrapper;
+  max-width: 900px;
+  border:none;
 }

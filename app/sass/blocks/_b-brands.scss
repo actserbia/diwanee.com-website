@@ -6,6 +6,9 @@
     display: block;
     float: left;
   }
+  h2 {
+    margin-bottom: 8%;
+  }
   @include breakpoint(mobile) {
     padding-top:0;
   }
@@ -21,6 +24,7 @@
   background-size: contain;
   &.double {
     width: 50%;
+    position: relative;
   }
   @include breakpoint(mobile) {
     width: 100%;
@@ -87,4 +91,20 @@
 }
 .box {
   transform:scale(1.1) translateY(10px);
+}
+.b-brands__desc {
+  position: absolute;
+  left: 16%;
+  bottom: 33%;
+  width: 60%;
+  line-height: 25px;
+  .nbr {
+    font-size: 181px;
+    position: relative;
+    top: -17px;
+    left: -76px;
+    /* font-weight: bold; */
+    color: #9a9a9a;
+    z-index: -1;
+  }
 }

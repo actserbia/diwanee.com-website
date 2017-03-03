@@ -10,8 +10,9 @@
 }
 .b-header-slider__item__info {
   position: absolute;
-  left:20%;
-  top:50%;
+  left: 25%;
+  top: 28%;
+  width: 26%;
 }
 .slick-arrow{
   position: absolute;
@@ -32,7 +33,14 @@
   text-align: left;
   font-family: $text__family--Roboto;
   h2 {
-    text-align: left;
+    font-size: 106px;
+    line-height: 106px;
+    margin-bottom: 8%;
+    display:block;
+  }
+  p {
+    margin-bottom: 21%;
+    line-height: 27px;
   }
 
 }

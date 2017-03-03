@@ -1,0 +1,12 @@
+.b-button {
+  width: 200px;
+  height: 50px;
+  display:block;
+  text-align: center;
+  line-height: 50px;
+}
+.b-button--red {
+  @extend .b-button;
+  background: #f03d65;
+  color:white;
+}

@@ -29,5 +29,15 @@
   bottom: 3%;
   width: 14%;
   left:5%;
+  margin-top: 3%;
   position: relative;
+}
+.header__nav {
+  margin-top: 4%;
+  float: right;
+  li {
+    display: inline;
+    margin: 0 15px;
+    color: white;
+  }
 }
