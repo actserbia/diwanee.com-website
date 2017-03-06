@@ -1,0 +1,30 @@
+.b-detail-intro {
+  padding-top: 32%;
+  display:block;
+  h5 {
+    text-align: center;
+  }
+  img {
+    position: relative;
+    left: -11%;
+    width: 123%;
+  }
+  p {
+    line-height: 33px;
+    margin-bottom: 10%;
+  }
+}
+img.b-detail-intro__logo {
+  width: 50%;
+  left: 25%;
+  margin-bottom: 12%;
+}
+.b-detail-intro__media {
+  margin-bottom: 16%;
+}
+.b-detail-intro__text--Roboto {
+  padding: 0 13%;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 10%;
+}

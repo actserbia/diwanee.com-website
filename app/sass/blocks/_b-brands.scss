@@ -1,10 +1,10 @@
 .b-brands {
   display: block;
-  margin-bottom: 32%;
+  margin-bottom: 8%;
   overflow: hidden;
   &>a {
     display: block;
-    float: left;
+    // float: left;
   }
   h2 {
     margin-bottom: 8%;
@@ -92,6 +92,7 @@
 .box {
   transform:scale(1.1) translateY(10px);
 }
+
 .b-brands__desc {
   position: absolute;
   left: 16%;
@@ -104,7 +105,17 @@
     top: -17px;
     left: -76px;
     /* font-weight: bold; */
-    color: #9a9a9a;
+    color: #eee;
     z-index: -1;
   }
+  .text {
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+.double.type2 .b-brands__desc {
+  position: absolute;
+  left: 33%;
+  bottom: 35%;
+  width: 60%;
 }

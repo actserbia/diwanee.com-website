@@ -35,9 +35,11 @@
 .header__nav {
   margin-top: 4%;
   float: right;
+  font-family: $text__family--Roboto;
   li {
     display: inline;
     margin: 0 15px;
     color: white;
+    font-size: 14px;
   }
 }
