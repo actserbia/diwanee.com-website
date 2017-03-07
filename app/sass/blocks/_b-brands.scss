@@ -8,6 +8,11 @@
   }
   h2 {
     margin-bottom: 8%;
+    @include breakpoint(mobile) {
+      font-size: 37px;
+      line-height: 15px;
+      margin-bottom: 15%;
+    }
   }
   @include breakpoint(mobile) {
     padding-top:0;
@@ -25,17 +30,29 @@
   &.double {
     width: 50%;
     position: relative;
+    @include breakpoint(mobile) {
+      width: 100%;
+      padding-top: 64%;
+    }
+  }
+  &.blank {
+    @include breakpoint(mobile) {
+      display: none;
+    }
   }
   @include breakpoint(mobile) {
     width: 100%;
     // left: 5%;
-    padding-top: 51%;
+    padding-top: 58%;
     margin-bottom: 0%;
-    border-bottom: 1px solid #eee;
+    // border-bottom: 1px solid #eee;
+    background-size: 200%;
+    background-position: center;
     // border-top: 1px solid #eee;
   }
   &.atyabtabkha {
     background-image:url(#{$assetpath}img/brands/atyabtabkha.png);
+    float: left;
   }
   &.duniatti {
     background-image:url(#{$assetpath}img/brands/duniatti.png);
@@ -55,16 +72,29 @@
   &.mashasheri {
     background-image:url(#{$assetpath}img/brands/mashasheri.png);
   }
+  &.double.first {
+    float: right;
+  }
+  &.double.type2 {
+    @include breakpoint(mobile) {
+      top: 0;
+      left: 0;
+      /* padding-top: 50%; */
+      height: 100%;
+      width: 100%;
+      top: 35%;
+    }
+  }
 }
 .b-brands__item__logo {
   width: 60%;
   position: absolute;
   top: 50%;
   left:20%;
-  opacity: 0.7;
+  // opacity: 0.7;
   transform: translateY(-50%);
   @include breakpoint(mobile) {
-    top:0;
+    // top:0;
   }
 }
 .b-brands__social {
@@ -107,10 +137,25 @@
     /* font-weight: bold; */
     color: #eee;
     z-index: -1;
+    @include breakpoint(mobile) {
+      left: 17px;
+    }
   }
   .text {
     font-size: 24px;
     line-height: 38px;
+    @include breakpoint(mobile) {
+      font-size: 17px;
+      line-height: 24px;
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    left:0;
+    bottom:0;
+    padding-bottom: 16%;
   }
 }
 .double.type2 .b-brands__desc {
@@ -118,4 +163,9 @@
   left: 33%;
   bottom: 35%;
   width: 60%;
+  @include breakpoint(mobile) {
+    top: 39%;
+    left: 0;
+    width: 100%;
+  }
 }

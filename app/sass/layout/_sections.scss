@@ -11,21 +11,47 @@
     left: -61px;
     top: -27px;
     margin-bottom: 20%;
+    @include breakpoint(mobile) {
+      position: relative;
+      left: -2px;
+      top: -109px;
+      margin-bottom: 20%;
+    }
   }
   margin-bottom:10%;
   .circle img {
     width: 200px;
     margin-left: 45px;
+    @include breakpoint(mobile) {
+      position: relative;
+      margin: 0;
+      left: -9%;
+      width: 54%;
+      float: left;
+    }
+  }
+  @include breakpoint(mobile) {
+    margin-bottom: 40%;
+    padding-top: 37%;
   }
 }
 .section--showreel {
   h2 {
     margin-bottom: 6.6%;
+    @include breakpoint(mobile) {
+      margin-bottom: 15.6%;
+    }
   }
   margin-bottom: 17%;
+  @include breakpoint(mobile) {
+    margin-bottom: 47%;
+  }
 }
 .section--detail-intro {
   .b-button {
     margin-bottom: 29%;
   }
+}
+.section--marketing-service {
+  padding: 0 5%;
 }

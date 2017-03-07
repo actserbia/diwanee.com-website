@@ -2,6 +2,25 @@
   width: 100%;
   z-index: 99;
   position: absolute;
+  .close-ico {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    right: 6px;
+    z-index: 999;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../assets/img/menu.svg);
+    &.active {
+      background-image:url(../../assets/img/close.svg);
+    }
+    @include breakpoint(mobile) {
+      display: block;
+    }
+  }
 }
 .header-social {
   float: right;
@@ -31,15 +50,39 @@
   left:5%;
   margin-top: 3%;
   position: relative;
+  @include breakpoint(mobile) {
+    bottom: 3%;
+    width: 37%;
+    left: 7%;
+    margin-top: 4%;
+  }
 }
 .header__nav {
   margin-top: 4%;
   float: right;
   font-family: $text__family--Roboto;
+  transition:max-height 400ms;
   li {
     display: inline;
     margin: 0 15px;
     color: white;
     font-size: 14px;
+    @include breakpoint(mobile) {
+      width: 100%;
+      display: block;
+      margin:20px 0;
+      // max-height: 0;
+      overflow: hidden;
+    }
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    text-align: center;
+    background: rgba(34, 34, 34, 0.77);
+    max-height: 0;
+    overflow: hidden;
+  }
+  &.active {
+    max-height: 300px;
   }
 }

@@ -17,8 +17,18 @@ h2 {
   font-size: 76px;
   line-height: 23px;
   span {
-    font-size: 26px;
+    font-size: 23px;
     display: block;
+    font-weight: 200;
+  }
+  @include breakpoint(mobile) {
+    font-size: 37px;
+    line-height: 15px;
+    margin-bottom: 15%;
+    span {
+      font-size: 17px;
+      display: block;
+    }
   }
 }
 h3 {

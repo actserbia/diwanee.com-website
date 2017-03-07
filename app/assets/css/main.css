@@ -93,8 +93,17 @@ h2 {
   font-size: 76px;
   line-height: 23px; }
   h2 span {
-    font-size: 26px;
-    display: block; }
+    font-size: 23px;
+    display: block;
+    font-weight: 200; }
+  @media (max-width: 700px) {
+    h2 {
+      font-size: 37px;
+      line-height: 15px;
+      margin-bottom: 15%; }
+      h2 span {
+        font-size: 17px;
+        display: block; } }
 
 h3 {
   font-size: 32px;
@@ -191,22 +200,65 @@ strong {
     left: -61px;
     top: -27px;
     margin-bottom: 20%; }
+    @media (max-width: 700px) {
+      .section--audience h2 {
+        position: relative;
+        left: -2px;
+        top: -109px;
+        margin-bottom: 20%; } }
   .section--audience .circle img {
     width: 200px;
     margin-left: 45px; }
+    @media (max-width: 700px) {
+      .section--audience .circle img {
+        position: relative;
+        margin: 0;
+        left: -9%;
+        width: 54%;
+        float: left; } }
+  @media (max-width: 700px) {
+    .section--audience {
+      margin-bottom: 40%;
+      padding-top: 37%; } }
 
 .section--showreel {
   margin-bottom: 17%; }
   .section--showreel h2 {
     margin-bottom: 6.6%; }
+    @media (max-width: 700px) {
+      .section--showreel h2 {
+        margin-bottom: 15.6%; } }
+  @media (max-width: 700px) {
+    .section--showreel {
+      margin-bottom: 47%; } }
 
 .section--detail-intro .b-button, .section--detail-intro .b-button--red, .section--detail-intro .b-button--transparent {
   margin-bottom: 29%; }
+
+.section--marketing-service {
+  padding: 0 5%; }
 
 .header {
   width: 100%;
   z-index: 99;
   position: absolute; }
+  .header .close-ico {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    right: 6px;
+    z-index: 999;
+    top: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../assets/img/menu.svg); }
+    .header .close-ico.active {
+      background-image: url(../../assets/img/close.svg); }
+    @media (max-width: 700px) {
+      .header .close-ico {
+        display: block; } }
 
 .header-social {
   float: right;
@@ -234,16 +286,38 @@ strong {
   left: 5%;
   margin-top: 3%;
   position: relative; }
+  @media (max-width: 700px) {
+    .header__logo {
+      bottom: 3%;
+      width: 37%;
+      left: 7%;
+      margin-top: 4%; } }
 
 .header__nav {
   margin-top: 4%;
   float: right;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  transition: max-height 400ms; }
   .header__nav li {
     display: inline;
     margin: 0 15px;
     color: white;
     font-size: 14px; }
+    @media (max-width: 700px) {
+      .header__nav li {
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+        overflow: hidden; } }
+  @media (max-width: 700px) {
+    .header__nav {
+      width: 100%;
+      text-align: center;
+      background: rgba(34, 34, 34, 0.77);
+      max-height: 0;
+      overflow: hidden; } }
+  .header__nav.active {
+    max-height: 300px; }
 
 .footer-copy {
   display: block;
@@ -294,12 +368,21 @@ strong {
     width: 44px;
     margin: 7px; }
 
+@media (max-width: 700px) {
+  .bck-to-top {
+    width: 100%;
+    text-align: center;
+    padding-top: 15%; } }
+
 .b-landing {
   display: block;
   margin-bottom: 12.4%; }
   .b-landing h1 {
     padding-top: 18%;
     padding-bottom: 18%; }
+    @media (max-width: 700px) {
+      .b-landing h1 {
+        display: none; } }
   .b-landing .b-division, .b-landing .b-division--half {
     margin-bottom: 10%; }
 
@@ -336,9 +419,22 @@ strong {
       background: black;
       bottom: 10px;
       right: -60px; }
+    @media (max-width: 700px) {
+      .b-landing-info .pre {
+        font-size: 20px; } }
   .b-landing-info p {
     clear: both;
     line-height: 42px; }
+    @media (max-width: 700px) {
+      .b-landing-info p {
+        font-size: 27px;
+        line-height: 36px; } }
+  @media (max-width: 700px) {
+    .b-landing-info {
+      left: 0;
+      padding: 0 5%; }
+      .b-landing-info br {
+        display: none; } }
 
 .b-line--bottom {
   position: relative; }
@@ -363,6 +459,11 @@ strong {
     display: block; }
   .b-brands h2 {
     margin-bottom: 8%; }
+    @media (max-width: 700px) {
+      .b-brands h2 {
+        font-size: 37px;
+        line-height: 15px;
+        margin-bottom: 15%; } }
   @media (max-width: 700px) {
     .b-brands {
       padding-top: 0; } }
@@ -377,14 +478,23 @@ strong {
   .b-brands__item.double {
     width: 50%;
     position: relative; }
+    @media (max-width: 700px) {
+      .b-brands__item.double {
+        width: 100%;
+        padding-top: 64%; } }
+  @media (max-width: 700px) {
+    .b-brands__item.blank {
+      display: none; } }
   @media (max-width: 700px) {
     .b-brands__item {
       width: 100%;
-      padding-top: 51%;
+      padding-top: 58%;
       margin-bottom: 0%;
-      border-bottom: 1px solid #eee; } }
+      background-size: 200%;
+      background-position: center; } }
   .b-brands__item.atyabtabkha {
-    background-image: url(../../assets/img/brands/atyabtabkha.png); }
+    background-image: url(../../assets/img/brands/atyabtabkha.png);
+    float: left; }
   .b-brands__item.duniatti {
     background-image: url(../../assets/img/brands/duniatti.png); }
   .b-brands__item.yasmina {
@@ -397,17 +507,23 @@ strong {
     background-image: url(../../assets/img/brands/mazyun.png); }
   .b-brands__item.mashasheri {
     background-image: url(../../assets/img/brands/mashasheri.png); }
+  .b-brands__item.double.first {
+    float: right; }
+  @media (max-width: 700px) {
+    .b-brands__item.double.type2 {
+      top: 0;
+      left: 0;
+      /* padding-top: 50%; */
+      height: 100%;
+      width: 100%;
+      top: 35%; } }
 
 .b-brands__item__logo {
   width: 60%;
   position: absolute;
   top: 50%;
   left: 20%;
-  opacity: 0.7;
   transform: translateY(-50%); }
-  @media (max-width: 700px) {
-    .b-brands__item__logo {
-      top: 0; } }
 
 .b-brands__social {
   width: 100%;
@@ -444,15 +560,35 @@ strong {
     /* font-weight: bold; */
     color: #eee;
     z-index: -1; }
+    @media (max-width: 700px) {
+      .b-brands__desc .nbr {
+        left: 17px; } }
   .b-brands__desc .text {
     font-size: 24px;
     line-height: 38px; }
+    @media (max-width: 700px) {
+      .b-brands__desc .text {
+        font-size: 17px;
+        line-height: 24px;
+        width: 80%;
+        margin-left: 10%; } }
+  @media (max-width: 700px) {
+    .b-brands__desc {
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      padding-bottom: 16%; } }
 
 .double.type2 .b-brands__desc {
   position: absolute;
   left: 33%;
   bottom: 35%;
   width: 60%; }
+  @media (max-width: 700px) {
+    .double.type2 .b-brands__desc {
+      top: 39%;
+      left: 0;
+      width: 100%; } }
 
 .b-contacts {
   clear: both;
@@ -494,7 +630,8 @@ strong {
   margin-bottom: 40%;
   padding: 0 4%;
   font-family: "Roboto", sans-serif;
-  line-height: 26px; }
+  line-height: 26px;
+  font-weight: 100; }
   .b-division--half .b-division__item {
     width: 48%;
     margin-right: 2%;
@@ -502,6 +639,12 @@ strong {
     .b-division--half .b-division__item:last-child {
       margin-right: 0;
       margin-left: 2%; }
+    @media (max-width: 700px) {
+      .b-division--half .b-division__item {
+        width: 100%; } }
+  @media (max-width: 700px) {
+    .b-division--half {
+      padding: 0 5%; } }
 
 .b-header-slider {
   display: block; }
@@ -511,10 +654,19 @@ strong {
     right: auto;
     left: 1%;
     width: 26px; }
+    @media (max-width: 700px) {
+      .b-header-slider .slick-prev, .b-header-slider .arrow-right {
+        display: none !important; } }
   .b-header-slider .slick-next, .b-header-slider .arrow-left {
     right: 1%;
     left: auto;
     width: 26px; }
+    @media (max-width: 700px) {
+      .b-header-slider .slick-next, .b-header-slider .arrow-left {
+        display: none !important; } }
+  @media (max-width: 700px) {
+    .b-header-slider {
+      margin-bottom: 26%; } }
 
 .b-header-slider__item {
   position: relative;
@@ -581,6 +733,9 @@ strong {
       padding: 0;
       content: '';
       color: transparent; }
+  @media (max-width: 700px) {
+    .slick-dots {
+      display: none !important; } }
 
 .b-header-slider__item__info {
   color: white;
@@ -590,13 +745,39 @@ strong {
     font-size: 106px;
     line-height: 106px;
     margin-bottom: 8%;
-    display: block; }
+    display: block;
+    font-weight: 500; }
+    @media (max-width: 700px) {
+      .b-header-slider__item__info h2 {
+        font-size: 50px;
+        line-height: 55px; } }
   .b-header-slider__item__info p {
     margin-bottom: 21%;
     line-height: 27px; }
+  @media (max-width: 700px) {
+    .b-header-slider__item__info {
+      position: absolute;
+      left: 12%;
+      top: 19%;
+      width: 80%; } }
+
+img.b-header-slider__item__media {
+  display: block !important; }
+  @media (max-width: 700px) {
+    img.b-header-slider__item__media {
+      display: none !important; } }
+
+img.b-header-slider__item__media--mobile {
+  display: none !important; }
+  @media (max-width: 700px) {
+    img.b-header-slider__item__media--mobile {
+      display: block !important; } }
 
 .b-audience {
   display: block; }
+  @media (max-width: 700px) {
+    .b-audience {
+      margin-top: -27%; } }
 
 .b-audience__item {
   width: 50%;
@@ -604,6 +785,9 @@ strong {
   text-align: center; }
   .b-audience__item img {
     width: 100%; }
+  @media (max-width: 700px) {
+    .b-audience__item {
+      width: 100%; } }
 
 .b-marketing-service, .b-marketing-service--top,
 .b-marketing-service--bottom {
@@ -616,6 +800,13 @@ strong {
   font-size: 20px; }
   .b-marketing-service--top h2 {
     margin-bottom: 13%; }
+  @media (max-width: 700px) {
+    .b-marketing-service--top {
+      margin-bottom: 21%;
+      text-align: left; }
+      .b-marketing-service--top p {
+        font-size: 16px;
+        line-height: 30px; } }
 
 .b-marketing-service--bottom {
   font-family: "Roboto", sans-serif;
@@ -626,6 +817,14 @@ strong {
     margin-bottom: 5%; }
   .b-marketing-service--bottom p {
     line-height: 28px; }
+  @media (max-width: 700px) {
+    .b-marketing-service--bottom {
+      margin-bottom: 40%;
+      text-align: left; }
+      .b-marketing-service--bottom h4 {
+        text-align: center; }
+      .b-marketing-service--bottom p {
+        font-size: 16px; } }
 
 .b-button, .b-button--red, .b-button--transparent {
   width: 220px;

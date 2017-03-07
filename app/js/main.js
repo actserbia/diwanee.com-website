@@ -12,4 +12,11 @@ $(function(){
     slidesToScroll: 1
 
   });
+  $(".close-ico").click(function(){
+    $(".header__nav").toggleClass("active");
+    $(".close-ico").toggleClass("active");
+  });
+  $(".bck-to-top").click(function(){
+    $("html, body").animate({"scrollTop":0},500);
+  });
 });
