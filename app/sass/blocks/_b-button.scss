@@ -4,6 +4,15 @@
   display:block;
   text-align: center;
   line-height: 50px;
+  @include breakpoint(tablet) {
+    height: 45px;
+    line-height: 45px;
+    width: 190px;
+  }
+  @include breakpoint(mobile) {
+    height: 50px;
+    line-height: 50px;
+  }
 }
 .b-button--red {
   @extend .b-button;
@@ -17,4 +26,28 @@
 }
 .elem-center div {
   display: inline-block;
+}
+.b-button--tabkha {
+  @extend .b-button;
+  background: #ff1b32;
+}
+.b-button--yasmina {
+  @extend .b-button;
+  background: #29004b;
+}
+.b-button--3a2ilati {
+  @extend .b-button;
+  background: #96367f;
+}
+.b-button--mashaheeri {
+  @extend .b-button;
+  background: #433190;
+}
+.b-button--warrini {
+  @extend .b-button;
+  background: #c42348;
+}
+.b-button--mazyun {
+  @extend .b-button;
+  background: #ce1135;
 }

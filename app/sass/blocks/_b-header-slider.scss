@@ -46,7 +46,7 @@
 .b-header-slider__item__info {
   position: absolute;
   left: 25%;
-  top: 26%;
+  top: 22%;
   width: 26%;
   h5 {
     position: relative;
@@ -67,6 +67,18 @@
   }
   h2 {
     clear: both;
+    font-size: 7vw;
+    font-size: 106px;
+    line-height: 7vw;
+    @include breakpoint(typoMax) {
+      font-size: cvp(106px,1600px);
+    }
+  }
+  @include breakpoint(tablet) {
+    position: absolute;
+    left: 20%;
+    top: 17%;
+    width: 44%;
   }
 }
 .slick-arrow{
@@ -80,7 +92,7 @@
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom:11%;
+  bottom:4%;
   li {
     display: inline;
     -webkit-appearance: none;
@@ -116,19 +128,26 @@
   text-align: left;
   font-family: $text__family--Roboto;
   h2 {
-    font-size: 106px;
     line-height: 106px;
     margin-bottom: 8%;
     display:block;
     font-weight: 500;
+    font-size: 106px;
+    line-height: 7vw;
+    @include breakpoint(typoMax) {
+      font-size: cvp(106px,1600px);
+    }
     @include breakpoint(mobile) {
-      font-size: 50px;
-      line-height:55px;
+      font-size: 55px;
+      line-height: 63px;
     }
   }
   p {
     margin-bottom: 21%;
     line-height: 27px;
+    @include breakpoint(tablet) {
+      margin-bottom: 5%;
+    }
   }
   @include breakpoint(mobile) {
     position: absolute;

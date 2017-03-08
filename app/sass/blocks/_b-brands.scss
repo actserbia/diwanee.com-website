@@ -30,9 +30,13 @@
   &.double {
     width: 50%;
     position: relative;
+    @include breakpoint(tablet) {
+      opacity: 0;
+    }
     @include breakpoint(mobile) {
       width: 100%;
       padding-top: 64%;
+      opacity: 1;
     }
   }
   &.blank {

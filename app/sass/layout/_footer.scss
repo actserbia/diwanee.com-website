@@ -59,6 +59,10 @@
   }
 }
 .bck-to-top {
+  cursor:pointer;
+  img {
+    margin-left:10px;
+  }
   @include breakpoint(mobile) {
     width: 100%;
     text-align: center;
