@@ -27,6 +27,7 @@
   }
 }
 .b-header-slider__item {
+  overflow: hidden;
   position: relative;
   outline:none;
   &:focus,
@@ -167,4 +168,63 @@ img.b-header-slider__item__media--mobile {
   @include breakpoint(mobile) {
     display: block !important;
   }
+}
+.b-header-slider__item__circle {
+  // background-image: url(../../assets/img/at-yellow-light.png);
+  width: 100%;
+  // height: 100%;
+  position: absolute;
+  // width: 25%;
+  // height: 25%;
+  z-index: 0;
+  left:0;
+  top:-50%;
+  width: 200% !important;
+  // z-index: 0;
+  left:11%;
+  top: -143%;
+  transform: scale(1.1);
+  // z-index: 999;
+  // -webkit-animation:dance 11s infinite ease-in-out;
+  transition:all 1500ms;
+   transition-delay: 0.5s;
+}
+.slick-active .b-header-slider__item__circle {
+  transform: scale(1.52);
+  left: -48%;
+}
+.yasmina .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+.3a2ilati .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+.yasmina .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+.yasmina .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+.yasmina .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+.yasmina .b-header-slider__item__circle {
+  .cls-1 {
+    fill:rgba(255, 0, 0, 0.51);
+  }
+}
+@-webkit-keyframes dance {
+  0% {left:-28%}
+  40% {left:-68%}
+  50% {left:-68%}
 }
