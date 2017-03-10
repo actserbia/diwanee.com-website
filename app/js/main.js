@@ -21,4 +21,9 @@ $(function(){
   $(".bck-to-top").click(function(){
     $("html, body").animate({"scrollTop":0},500);
   });
+  $('.b-header-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+    $(".b-header-slider__item__circle").velocity("reverse");
+    $(".slick-active").find('.b-header-slider__item__circle').velocity({"scale": "1.58", "translateX": "0%", "translateY": "0%"}, 1200,[200,20]);
+
+  });
 });
