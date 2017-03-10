@@ -811,33 +811,47 @@ img.b-header-slider__item__media--mobile {
   left: 0;
   top: -50%;
   width: 200% !important;
-  left: 11%;
-  top: -143%;
-  transform: scale(1.1);
+  transform: scale(1);
+  left: -60%;
+  top: -160%;
   transition: all 1500ms;
-  transition-delay: 0.5s; }
+  transition-delay: 0.6s; }
+
+.atyab .b-header-slider__item__circle {
+  left: -30%;
+  top: -63%; }
+  .atyab .b-header-slider__item__circle .cls-1 {
+    fill: #ffb900; }
+
+.yasmina .b-header-slider__item__circle {
+  transform: scale(8); }
+  .yasmina .b-header-slider__item__circle .cls-1 {
+    fill: rgba(51, 6, 90, 0.8); }
+
+.mazyun .b-header-slider__item__circle {
+  transform: scale(2.58);
+  left: -42%;
+  top: -247%; }
+  .mazyun .b-header-slider__item__circle .cls-1 {
+    fill: rgba(0, 0, 0, 0.2); }
+
+.alati .b-header-slider__item__circle {
+  transform: scale(3.58);
+  left: -9%;
+  top: -155%; }
+  .alati .b-header-slider__item__circle .cls-1 {
+    fill: rgba(34, 22, 27, 0.38); }
+
+.mashaheeri .b-header-slider__item__circle .cls-1 {
+  fill: rgba(4, 14, 87, 0.7); }
+
+.warrini .b-header-slider__item__circle .cls-1 {
+  fill: rgba(0, 0, 0, 0.3); }
 
 .slick-active .b-header-slider__item__circle {
-  transform: scale(1.52);
-  left: -48%; }
-
-.yasmina .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
-
-.3a2ilati .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
-
-.yasmina .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
-
-.yasmina .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
-
-.yasmina .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
-
-.yasmina .b-header-slider__item__circle .cls-1 {
-  fill: rgba(255, 0, 0, 0.51); }
+  transform: scale(1.58);
+  left: -42%;
+  top: -139%; }
 
 @-webkit-keyframes dance {
   0% {
