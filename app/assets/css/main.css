@@ -810,10 +810,16 @@ img.b-header-slider__item__media--mobile {
   right: 0;
   top: 0;
   transform-origin: center;
-  transform: scale(2.7) translateX(18%) translateY(-9%) rotateZ(-180deg); }
+  transform: rotateZ(52deg);
+  width: 215%;
+  top: -128%;
+  left: -18%; }
+
+.slick-active .b-header-slider__item__circle {
+  display: block; }
 
 .atyab .b-header-slider__item__circle .st1 {
-  fill: #ffb900; }
+  fill: rgba(255, 185, 0, 0.66); }
 
 .yasmina .b-header-slider__item__circle .st1 {
   fill: rgba(51, 6, 90, 0.8); }
@@ -829,6 +835,9 @@ img.b-header-slider__item__media--mobile {
 
 .warrini .b-header-slider__item__circle .st1 {
   fill: rgba(0, 0, 0, 0.3); }
+
+.st0 {
+  opacity: 1 !important; }
 
 @-webkit-keyframes dance {
   0% {

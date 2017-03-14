@@ -179,16 +179,23 @@ img.b-header-slider__item__media--mobile {
 
   transform-origin: center;
   // transform: rotateZ(-180deg) scale(2.3) translateX(44%) translateY(-50%);
-  transform:  scale(2.7) translateX(18%) translateY(-9%) rotateZ(-180deg);
+  // transform:  scale(2.7) translateX(18%) translateY(-9%);
+  transform: rotateZ(52deg);
+  width: 215%;
+  top: -128%;
+  left: -18%;
+  // display: none;
 }
-
+.slick-active .b-header-slider__item__circle {
+  display: block;
+}
 .atyab .b-header-slider__item__circle {
   // left: -30%;
   // top: -63%;
   // transform:scale(1.3) translateX(5%) translateY(29%) translateZ(0%) ;
 
   .st1 {
-    fill:#ffb900;
+    fill:rgba(255, 185, 0, 0.66);
   }
 }
 .yasmina .b-header-slider__item__circle {
@@ -220,6 +227,9 @@ img.b-header-slider__item__media--mobile {
   .st1 {
     fill:rgba(0, 0,0, 0.3);
   }
+}
+.st0 {
+  opacity: 1 !important;
 }
 
 // .slick-active .b-header-slider__item__circle {
