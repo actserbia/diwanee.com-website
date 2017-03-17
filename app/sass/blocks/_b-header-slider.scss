@@ -134,9 +134,10 @@
     display:block;
     font-weight: 500;
     font-size: 106px;
-    line-height: 7vw;
+    line-height: 113px;
     @include breakpoint(typoMax) {
       font-size: cvp(106px,1600px);
+      line-height:cvp(113px,1600px)
     }
     @include breakpoint(mobile) {
       font-size: 55px;
@@ -203,6 +204,9 @@ img.b-header-slider__item__media--mobile {
   -webkit-transform-origin: 150% 150%;
   -moz-transform-origin: 150% 150%;
   transform-origin: 150% 150%;
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 .yasmina .b-header-slider__item__circle {
   // transform:scale(3.6) translateX(0) translateY(0) translateZ(0) ;

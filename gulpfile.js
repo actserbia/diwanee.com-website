@@ -18,6 +18,7 @@ var gulp = require("gulp"),
 gulp.task("scripts",function(){
     gulp.src([
       "app/bower_components/jquery/dist/jquery.min.js",
+      "app/bower_components/jquery-fadethis/src/jquery.fadethis.js",
       "app/bower_components/slick-carousel/slick/slick.js",
       "app/bower_components/velocity/velocity.js",
       "app/js/**/*.js", '!app/js/**/*.min.js',

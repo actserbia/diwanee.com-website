@@ -5,7 +5,14 @@ $(function(){
     dots:true,
     speed:2000,
     fade:true,
-    easing:'easeInOut'
+    easing:'easeInOut',
+    responsive: [{
+      breakpoint:1024,
+      settings: {
+        fade:false,
+        speed:400
+      }
+    }]
   });
   $(".b-detail-brands-slider").slick({
     prevArrow: '<img src="assets/img/left-small.svg" class="arrow-right">',

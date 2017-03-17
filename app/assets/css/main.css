@@ -771,10 +771,11 @@ strong {
     display: block;
     font-weight: 500;
     font-size: 106px;
-    line-height: 7vw; }
+    line-height: 113px; }
     @media (max-width: 1600px) {
       .b-header-slider__item__info h2 {
-        font-size: 6.625vw; } }
+        font-size: 6.625vw;
+        line-height: 7.0625vw; } }
     @media (max-width: 700px) {
       .b-header-slider__item__info h2 {
         font-size: 55px;
@@ -832,6 +833,9 @@ img.b-header-slider__item__media--mobile {
   -webkit-transform-origin: 150% 150%;
   -moz-transform-origin: 150% 150%;
   transform-origin: 150% 150%; }
+  @media (max-width: 700px) {
+    .mask-circle {
+      display: none; } }
 
 .yasmina .b-header-slider__item__circle .st1 {
   fill: rgba(51, 6, 90, 0.8); }
