@@ -818,7 +818,19 @@ img.b-header-slider__item__media--mobile {
 .slick-active .b-header-slider__item__circle {
   display: block; }
 
+.atyab .mask-circle,
+.alati .mask-circle,
+.mazyun .mask-circle,
 .atyab .mask-circle {
+  -ms-transform-origin: 150% 150%;
+  -webkit-transform-origin: 150% 150%;
+  -moz-transform-origin: 150% 150%;
+  transform-origin: 150% 150%; }
+
+.mask-circle {
+  -ms-transform-origin: 150% 150%;
+  -webkit-transform-origin: 150% 150%;
+  -moz-transform-origin: 150% 150%;
   transform-origin: 150% 150%; }
 
 .yasmina .b-header-slider__item__circle .st1 {
