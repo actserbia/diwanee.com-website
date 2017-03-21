@@ -1,6 +1,6 @@
 .b-video {
   position: relative;
-  padding-top:56%;
+  // padding-top:56%;
   video {
     width: 100%;
   }
@@ -10,5 +10,27 @@
     position: absolute;
     top:0;
     left:0;
+  }
+}
+.video-js {
+  outline: none !important;
+}
+.video-js button.vjs-big-play-button {
+  background-image: url(../../assets/img/play-ico.png) !important;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+  transform:translateX(-50%) translateY(-50%);
+  -moz-transform:translateX(-50%) translateY(-50%);
+  -webkit-transform:translateX(-50%) translateY(-50%);
+  background-color: transparent;
+  transition:all 500ms !important;
+  margin:0 !important;
+  &:before,
+  &:after {
+    display: none;
   }
 }

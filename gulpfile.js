@@ -22,6 +22,7 @@ gulp.task("scripts",function(){
       "app/bower_components/slick-carousel/slick/slick.js",
       "app/bower_components/velocity/velocity.js",
       "app/js/**/*.js", '!app/js/**/*.min.js',
+
     ])
     .pipe(concat('main.js'))
     .pipe(rename({suffix:'.min'}))

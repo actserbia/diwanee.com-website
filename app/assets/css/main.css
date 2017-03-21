@@ -193,33 +193,33 @@ strong {
 .section, .section--brands {
   display: block; }
 
-.section--audience h2 {
-  position: relative;
-  left: -61px;
-  top: -27px;
-  margin-bottom: 20%; }
+.section--audience {
+  margin-bottom: 10%; }
+  .section--audience h2 {
+    position: relative;
+    left: -61px;
+    top: -27px;
+    margin-bottom: 20%; }
+    @media (max-width: 700px) {
+      .section--audience h2 {
+        position: relative;
+        left: -2px;
+        top: -109px;
+        margin-bottom: 20%; } }
+  .section--audience .circle img {
+    width: 200px;
+    margin-left: 45px; }
+    @media (max-width: 700px) {
+      .section--audience .circle img {
+        position: relative;
+        margin: 0;
+        left: -9%;
+        width: 54%;
+        float: left; } }
   @media (max-width: 700px) {
-    .section--audience h2 {
-      position: relative;
-      left: -2px;
-      top: -109px;
-      margin-bottom: 20%; } }
-
-.section--audience .circle img {
-  width: 200px;
-  margin-left: 45px; }
-  @media (max-width: 700px) {
-    .section--audience .circle img {
-      position: relative;
-      margin: 0;
-      left: -9%;
-      width: 54%;
-      float: left; } }
-
-@media (max-width: 700px) {
-  .section--audience {
-    margin-bottom: 40%;
-    padding-top: 37%; } }
+    .section--audience {
+      margin-bottom: 40%;
+      padding-top: 37%; } }
 
 .section--showreel {
   margin-bottom: 17%; }
@@ -475,13 +475,28 @@ strong {
     .b-brands {
       padding-top: 0; } }
 
+.b-brands__item__background {
+  width: 100%;
+  transition: all 1300ms;
+  position: absolute;
+  display: block;
+  top: 0;
+  transform: scale(1.02); }
+
 .b-brands__item {
+  background-image: none !important;
   width: 25%;
   float: left;
   padding-top: 25%;
+  overflow: hidden;
   position: relative;
   transition: all 300ms;
-  background-size: contain; }
+  background-size: 100%;
+  background-position: center; }
+  .b-brands__item:hover .b-brands__item__background {
+    transform: scale(1.1); }
+  .b-brands__item.double, .b-brands__item.blank {
+    padding-top: 25%; }
   .b-brands__item.double {
     width: 50%;
     position: relative; }
@@ -712,12 +727,12 @@ strong {
       right: -70px; }
   .b-header-slider__item__info h2 {
     clear: both;
-    font-size: 7vw;
     font-size: 106px;
-    line-height: 7vw; }
+    line-height: 117px; }
     @media (max-width: 1600px) {
       .b-header-slider__item__info h2 {
-        font-size: 6.625vw; } }
+        font-size: 6.625vw;
+        line-height: 7.3125vw; } }
   @media (max-width: 1025px) {
     .b-header-slider__item__info {
       position: absolute;
@@ -771,11 +786,11 @@ strong {
     display: block;
     font-weight: 500;
     font-size: 106px;
-    line-height: 113px; }
+    line-height: 117px; }
     @media (max-width: 1600px) {
       .b-header-slider__item__info h2 {
         font-size: 6.625vw;
-        line-height: 7.0625vw; } }
+        line-height: 7.3125vw; } }
     @media (max-width: 700px) {
       .b-header-slider__item__info h2 {
         font-size: 55px;
@@ -926,7 +941,7 @@ img.b-header-slider__item__media--mobile {
       line-height: 50px; } }
 
 .b-button--red {
-  background: #f03d65;
+  background: #E5204B;
   color: white; }
 
 .b-button--transparent {
@@ -937,26 +952,25 @@ img.b-header-slider__item__media--mobile {
   display: inline-block; }
 
 .b-button--tabkha {
-  background: #ff1b32; }
+  background: #E5204B; }
 
 .b-button--yasmina {
-  background: #29004b; }
+  background: #E5204B; }
 
 .b-button--3a2ilati {
-  background: #96367f; }
+  background: #E5204B; }
 
 .b-button--mashaheeri {
-  background: #433190; }
+  background: #E5204B; }
 
 .b-button--warrini {
-  background: #c42348; }
+  background: #E5204B; }
 
 .b-button--mazyun {
-  background: #ce1135; }
+  background: #E5204B; }
 
 .b-video {
-  position: relative;
-  padding-top: 56%; }
+  position: relative; }
   .b-video video {
     width: 100%; }
   .b-video iframe {
@@ -965,6 +979,26 @@ img.b-header-slider__item__media--mobile {
     position: absolute;
     top: 0;
     left: 0; }
+
+.video-js {
+  outline: none !important; }
+
+.video-js button.vjs-big-play-button {
+  background-image: url(../../assets/img/play-ico.png) !important;
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  border-radius: 50%;
+  border: none;
+  background-size: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  background-color: transparent;
+  transition: all 500ms !important;
+  margin: 0 !important; }
+  .video-js button.vjs-big-play-button:before, .video-js button.vjs-big-play-button:after {
+    display: none; }
 
 .b-detail-brands-slider {
   width: 100%;

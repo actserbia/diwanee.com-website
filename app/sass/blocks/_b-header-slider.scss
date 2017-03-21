@@ -68,11 +68,11 @@
   }
   h2 {
     clear: both;
-    font-size: 7vw;
     font-size: 106px;
-    line-height: 7vw;
+    line-height: 117px;
     @include breakpoint(typoMax) {
       font-size: cvp(106px,1600px);
+      line-height: cvp(117px,1600px);
     }
   }
   @include breakpoint(tablet) {
@@ -134,10 +134,10 @@
     display:block;
     font-weight: 500;
     font-size: 106px;
-    line-height: 113px;
+    line-height:117px;
     @include breakpoint(typoMax) {
       font-size: cvp(106px,1600px);
-      line-height:cvp(113px,1600px)
+      line-height: cvp(117px,1600px);
     }
     @include breakpoint(mobile) {
       font-size: 55px;

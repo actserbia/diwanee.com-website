@@ -18,15 +18,36 @@
     padding-top:0;
   }
 }
+.b-brands__item__background {
+  width: 100%;
+  transition:all 1300ms;
+  position: absolute;
+  display: block;
+  top:0;
+  transform:scale(1.02);
+}
 .b-brands__item {
+  background-image: none !important;
   width: 25%;
   float: left;
   padding-top:25%;
+  overflow: hidden;
   position: relative;
   // border-bottom:1px solid #eee;
   // border:1px solid red;d
   transition:all 300ms;
-  background-size: contain;
+  // background-size: contain;
+  background-size: 100%;
+  background-position: center;
+  &:hover {
+    .b-brands__item__background {
+      transform:scale(1.1);
+    }
+  }
+  &.double,
+  &.blank {
+    padding-top:25%;
+  }
   &.double {
     width: 50%;
     position: relative;
@@ -76,6 +97,7 @@
   &.mashasheri {
     background-image:url(#{$assetpath}img/brands/mashasheri.png);
   }
+
   &.double.first {
     float: right;
   }
