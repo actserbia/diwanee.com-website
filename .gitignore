@@ -27,5 +27,4 @@ node_modules/
 .sass-cache
 *.css.map
 build/
-dist/
 app/assets/download
