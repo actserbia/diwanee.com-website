@@ -75,6 +75,9 @@ html {
     html {
       font-size: 16px; } }
 
+body {
+  position: relative; }
+
 h1 {
   font-size: 47px;
   line-height: 58px;
@@ -155,8 +158,6 @@ strong {
 .wrapper, .wrapper--medium, .wrapper--header {
   display: block;
   margin: 0 auto;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
   max-width: 800px;
   position: relative; }
   .wrapper:before, .wrapper--medium:before, .wrapper--header:before {
@@ -237,6 +238,10 @@ strong {
 
 .section--marketing-service {
   padding: 0 5%; }
+
+.section--footer {
+  background: #eee;
+  padding-top: 7%; }
 
 .header {
   width: 100%;
@@ -377,6 +382,9 @@ strong {
       width: 100%;
       text-align: center;
       padding-top: 15%; } }
+
+footer {
+  padding: 0 4%; }
 
 .b-landing {
   display: block;
@@ -898,6 +906,8 @@ img.b-header-slider__item__media--mobile {
   font-size: 20px; }
   .b-marketing-service--top h2 {
     margin-bottom: 13%; }
+  .b-marketing-service--top p {
+    padding: 0 4%; }
   @media (max-width: 700px) {
     .b-marketing-service--top {
       margin-bottom: 21%;
@@ -914,7 +924,9 @@ img.b-header-slider__item__media--mobile {
     font-weight: normal;
     margin-bottom: 5%; }
   .b-marketing-service--bottom p {
-    line-height: 28px; }
+    padding: 0 4%;
+    line-height: 28px;
+    font-weight: 100; }
   @media (max-width: 700px) {
     .b-marketing-service--bottom {
       margin-bottom: 40%;
@@ -996,7 +1008,9 @@ img.b-header-slider__item__media--mobile {
   -webkit-transform: translateX(-50%) translateY(-50%);
   background-color: transparent;
   transition: all 500ms !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+  background-size: 109%;
+  background-position: center; }
   .video-js button.vjs-big-play-button:before, .video-js button.vjs-big-play-button:after {
     display: none; }
 
@@ -1060,6 +1074,20 @@ img.b-detail-intro__logo {
   .b-social__item:nth-child(3) img {
     width: 44px;
     margin: 7px; }
+
+.b-grid__holder {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2800px;
+  transform: translateX(-50%);
+  left: 50%; }
+
+.b-grid__line {
+  width: 200px;
+  float: left;
+  border-right: 1px solid #eee;
+  height: 100%; }
 
 .page-detail .header__nav li {
   color: black; }

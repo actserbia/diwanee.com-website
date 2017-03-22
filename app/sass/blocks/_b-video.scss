@@ -29,6 +29,8 @@
   background-color: transparent;
   transition:all 500ms !important;
   margin:0 !important;
+  background-size: 109%;
+  background-position: center;
   &:before,
   &:after {
     display: none;
