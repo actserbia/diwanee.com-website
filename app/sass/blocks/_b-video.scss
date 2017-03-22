@@ -1,6 +1,8 @@
 .b-video {
   position: relative;
   // padding-top:56%;
+  max-width: 1200px;
+  margin: 0 auto;
   video {
     width: 100%;
   }
@@ -14,6 +16,7 @@
 }
 .video-js {
   outline: none !important;
+  width: 100%;
 }
 .video-js button.vjs-big-play-button {
   background-image: url(../../assets/img/play-ico.png) !important;

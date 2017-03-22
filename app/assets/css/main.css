@@ -982,7 +982,9 @@ img.b-header-slider__item__media--mobile {
   background: #E5204B; }
 
 .b-video {
-  position: relative; }
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
   .b-video video {
     width: 100%; }
   .b-video iframe {
@@ -993,7 +995,8 @@ img.b-header-slider__item__media--mobile {
     left: 0; }
 
 .video-js {
-  outline: none !important; }
+  outline: none !important;
+  width: 100%; }
 
 .video-js button.vjs-big-play-button {
   background-image: url(../../assets/img/play-ico.png) !important;
