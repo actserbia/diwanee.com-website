@@ -25,9 +25,9 @@ $(function(){
     slidesToScroll: 1
 
   });
-  $(".close-ico").click(function(){
+  $(".menu-ico").click(function(){
     $(".header__nav").toggleClass("active");
-    $(".close-ico").toggleClass("active");
+    $(".menu-ico").toggleClass("active");
   });
   $(".bck-to-top").click(function(){
     $("html, body").animate({"scrollTop":0},500);
@@ -55,23 +55,6 @@ $(function(){
         $(_this).find(".mask-circle").velocity({translateZ:0, rotateZ:["-=360deg", '0deg']}, 2000, 'easeInOutQuint');
         $(_next).find(".mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2000, 'easeInOutQuint');
       });
-
-      // $(".slick-arrow.arrow-right").click(function(){
-      //   console.log("right");
-      //   if (!$(".slick-active .mask-circle").hasClass("velocity-animating")){
-      //     $(".slick-active .mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2000, 'easeInOutQuint');
-      //   }
-      // });
-      // $(".slick-arrow.arrow-left").click(function(){
-      //   console.log("left");
-      //   if (!$(".slick-active .mask-circle").hasClass("velocity-animating")){
-      //     $(".slick-active .mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2000, 'easeInOutQuint');
-      //   }
-      //
-      // });
-      // setTimeout(function(){
-        // $(".atyab .mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2500, 'easeInOutExpo');
-      // },400);
       gridInit();
 });
 

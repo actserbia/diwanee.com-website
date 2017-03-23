@@ -2,8 +2,8 @@
   width: 100%;
   z-index: 99;
   position: absolute;
-  .close-ico {
-    display: none;
+  .menu-ico {
+    // display: none;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -58,7 +58,16 @@
   }
 }
 .header__nav {
-  margin-top: 4%;
+  position: fixed;
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  top:0;
+  transition:opacity 400ms;
+  left:0;
+  background: rgba(255,255,255,0.9);
+  // margin-top: 4%;k
   float: right;
   font-family: $text__family--Roboto;
   transition:max-height 400ms;
@@ -83,6 +92,8 @@
     overflow: hidden;
   }
   &.active {
-    max-height: 300px;
+    display: block;
+    opacity: 1;
+
   }
 }
