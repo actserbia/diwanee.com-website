@@ -220,7 +220,7 @@ strong {
   @media (max-width: 700px) {
     .section--audience {
       margin-bottom: 40%;
-      padding-top: 37%; } }
+      padding-top: 6%; } }
 
 .section--showreel {
   margin-bottom: 17%; }
@@ -1016,6 +1016,10 @@ img.b-header-slider__item__media--mobile {
   background-position: center; }
   .video-js button.vjs-big-play-button:before, .video-js button.vjs-big-play-button:after {
     display: none; }
+  @media (max-width: 700px) {
+    .video-js button.vjs-big-play-button {
+      width: 100px;
+      background-repeat: no-repeat; } }
 
 .b-detail-brands-slider {
   width: 100%;
@@ -1082,9 +1086,7 @@ img.b-detail-intro__logo {
   position: absolute;
   top: 0;
   height: 100%;
-  width: 2800px;
-  transform: translateX(-50%);
-  left: 50%; }
+  width: 2800px; }
 
 .b-grid__line {
   width: 200px;

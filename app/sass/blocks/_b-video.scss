@@ -38,4 +38,8 @@
   &:after {
     display: none;
   }
+  @include breakpoint(mobile) {
+    width: 100px;
+    background-repeat: no-repeat;
+  }
 }

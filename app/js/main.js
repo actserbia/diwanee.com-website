@@ -72,4 +72,27 @@ $(function(){
       // setTimeout(function(){
         // $(".atyab .mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2500, 'easeInOutExpo');
       // },400);
+      gridInit();
 });
+
+var resize_timeout;
+$( window ).resize(function() {
+  clearTimeout(resize_timeout);
+  resize_timeout = setTimeout(function(){
+    gridRelocate();
+  },300)
+});
+
+function gridRelocate(){
+  var width = $(window).width(),
+      grid_width = 2800,
+      left = (width - grid_width) /2;
+  $(".b-grid__holder").animate({left:left+'px'},400);
+}
+function gridInit(){
+  var width = $(window).width(),
+      grid_width = 2800,
+      left = (width - grid_width) /2;
+      console.log(left);
+  $(".b-grid__holder").css({"left":left+'px'});
+}
