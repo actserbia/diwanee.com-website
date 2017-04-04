@@ -27,6 +27,7 @@ $(function(){
   });
   $(".menu-ico").click(function(){
     $(".header__nav").toggleClass("active");
+    $("body").toggleClass("nav-active");
     $(".menu-ico").toggleClass("active");
   });
   $(".bck-to-top").click(function(){

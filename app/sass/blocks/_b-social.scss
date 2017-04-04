@@ -1,21 +1,22 @@
 .b-social {
   text-align: center;
-  margin-bottom: 11%;
-  padding-top: 4%;
+  // margin-bottom: 11%;
+  // padding-top: 4%;
 }
-.b-social__item {
+li.b-social__item {
+  width: auto;
   display: inline-block;
   text-align: center;
+  margin:8px;
   a {
     display: block;
   }
   img {
-    width: 60px;
+    height: 34px;
   }
-  &:nth-child(3){
+  &:nth-child(2){
     img {
-      width: 44px;
-      margin:7px;
+      height: 30px;
     }
   }
 }
