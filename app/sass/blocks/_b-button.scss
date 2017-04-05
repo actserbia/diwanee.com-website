@@ -23,8 +23,15 @@
   @extend .b-button;
   border: 2px solid #222;
   line-height: 44px;
+  &:hover {
+    background: #222;
+    color:white;
+  }
 }
 .elem-center div {
+  display: inline-block;
+}
+.elem-center a {
   display: inline-block;
 }
 .b-button--tabkha {

@@ -999,8 +999,14 @@ img.b-header-slider__item__media--mobile {
 .b-button--transparent {
   border: 2px solid #222;
   line-height: 44px; }
+  .b-button--transparent:hover {
+    background: #222;
+    color: white; }
 
 .elem-center div {
+  display: inline-block; }
+
+.elem-center a {
   display: inline-block; }
 
 .b-button--tabkha {
@@ -1090,7 +1096,9 @@ img.b-header-slider__item__media--mobile {
     width: 123%; }
   .b-detail-intro p {
     line-height: 33px;
-    margin-bottom: 10%; }
+    margin-bottom: 10%;
+    text-align: center;
+    padding: 0 3%; }
 
 img.b-detail-intro__logo {
   width: 50%;
@@ -1121,6 +1129,18 @@ li.b-social__item {
   li.b-social__item:nth-child(2) img {
     height: 30px; }
 
+.b-detail-intro .b-social {
+  text-align: center;
+  margin-bottom: 11%;
+  padding-top: 4%; }
+
+.b-detail-intro li.b-social__item {
+  display: inline-block;
+  text-align: center; }
+  .b-detail-intro li.b-social__item img {
+    width: 60px;
+    height: 60px; }
+
 .b-grid__holder {
   position: absolute;
   top: 0;
@@ -1133,5 +1153,5 @@ li.b-social__item {
   border-right: 1px solid #eee;
   height: 100%; }
 
-.page-detail .header__nav li {
-  color: black; }
+.page-detail .menu-ico {
+  background-image: url(../../assets/img/menu--dark.svg); }
