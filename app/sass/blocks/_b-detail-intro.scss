@@ -8,6 +8,10 @@
     position: relative;
     left: -11%;
     width: 123%;
+    @include breakpoint(mobile) {
+      width: 90%;
+      left: 5%;
+    }
   }
   p {
     line-height: 33px;
@@ -29,4 +33,7 @@ img.b-detail-intro__logo {
   text-align: center;
   line-height: 30px;
   margin-bottom: 10%;
+  font-family: $text__family--Roboto;
+  color:#424242;
+  font-weight: 300;
 }
