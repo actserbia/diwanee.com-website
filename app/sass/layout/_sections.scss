@@ -61,3 +61,42 @@
   background: #eee;
   padding-top:7%;
 }
+.section--contact {
+  .wrapper {
+    @include breakpoint(laptop) {
+      left: -10%;
+    }
+    @include breakpoint(mobile) {
+      left: 0;
+    }
+  }
+  h1 {
+    margin-bottom: 10%;
+  }
+  .b-division--half {
+    padding:0;
+    @include breakpoint(mobile) {
+      padding:0 5%;
+    }
+  }
+  .b-division__item:last-child {
+    @include breakpoint(mobile) {
+      margin-left:0 !important;
+    }
+  }
+  .b-contacts__item, .b-contacts__item:nth-of-type(3) {
+    width: 100%;
+    margin-bottom: 13%;
+    h4 {
+      // font-weight: normal;
+      margin-bottom: 3%;
+      font-family: $text__family--Playfair;
+    }
+  }
+  .b-division__item {
+    img {
+      width: 100%;
+      width: 156%;
+    }
+  }
+}

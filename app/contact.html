@@ -31,7 +31,7 @@
     </script>
 </head>
 
-<body class='page-3a2ilati page-detail'>
+<body class='page-contact'>
   <div class="b-grid__holder">
     <div class="b-grid__line"></div>
     <div class="b-grid__line"></div>
@@ -57,9 +57,9 @@
     <nav class='header__nav'>
       <div class="header__nav__holder">
         <ul class='header__links'>
-          <li>About</li>
-          <li>Brands</li>
-          <li>Contact</li>
+          <li><a href="">About</a></li>
+          <li><a href="">Brands</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <h5>Let's get connected</h5>
         <ul class='b-social'>
@@ -77,51 +77,34 @@
     </nav>
     </div>
   </header>
-  <section class='section--detail-intro'>
+  <section class="section--contact">
     <div class="wrapper">
-      <div class="b-detail-intro">
-        <img src="assets/img/detail/mashaheeri-logo.svg" alt="" class='b-detail-intro__logo'>
-        <p>Thousands of worldwide recipes prepared by the best chefs and food experts <br /> GCC and Arab women</p>
-        <img class="b-detail-intro__media" src='assets/img/detail/mashaheeri-mockup.png'>
-        <h5>follow Atyabtabkha</h5>
-        <ul class='b-social'>
-          <li class="b-social__item">
-            <a href="https://www.facebook.com/Diwanee" target='_blank'><img src='assets/img/footer/fb.svg'></a>
-          </li>
-          <li class="b-social__item">
-          <a href="https://twitter.com/diwanee" target='_blank'><img src='assets/img/footer/insta.svg'></a>
-        </li>
-      </ul>
-      </div>
-      <p class='b-detail-intro__text--Roboto'>The ultimate food destination in the Middle East, with thousands of worldwide recipes prepared by
-        the best chefs and food experts are brought to you along with useful culinary and health tips and recipe preparation videos</p>
-      <div class="elem-center"><a href='http://www.yasmina.com' class="b-button b-button--transparent">visit atyabtabkha.com</a></div>
-    </div>
-  </section>
-
-  <section class="section--detail-brands">
-    <div class="wrapper">
-      <div class="elem-center">
-        <h3>Our Brands</h3>
-      </div>
-      <div class="b-detail-brands-slider">
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/3a2ilati.png" alt="">
+      <h1 class='text-align--left'>Contact</h1>
+      <div class="b-division--half b-division--flat">
+        <div class="b-division__item">
+          <div class="b-contacts__item" >
+            <h4>Dubai</h4>
+            <p>Office Park, Building Block A</p>
+            <p>Units A301-A302, Dubai Internet City</p>
+            <p>T:971 4 - 434 7147</p>
+            <div class="b-contact__item__button" onClick='toDubai()'>SHOW ON MAP</div>
+          </div>
+          <div class="b-contacts__item" >
+            <h4>Beirut</h4>
+            <p>Beirut Digital District / BDD 1075</p>
+            <p>2nd and 3rd floor, Bechara El Khoury</p>
+             <p>T:961 1 - 660327</p>
+             <div class="b-contact__item__button"  onClick='toBeirut()'>SHOW ON MAP</div>
+          </div>
+          <div class="b-contacts__item" >
+            <h4>Belgrade</h4>
+            <p>Resavska 23, 11000 Belgrade</p>
+            <p>T:381 11 - 3340 117</p>
+            <div class="b-contact__item__button"  onClick='toBelgrade()'>SHOW ON MAP</div>
+          </div>
         </div>
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/yasmina.png" alt="">
-        </div>
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/warrini.png" alt="">
-        </div>
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/atyabtabkha.png" alt="">
-        </div>
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/mazyun.png" alt="">
-        </div>
-        <div class="b-detail-brands-slider__item">
-          <img src="assets/img/detail-brands/mashaheeri.png" alt="">
+        <div class="b-division__item">
+           <div id="b-map"></div>
         </div>
       </div>
     </div>
@@ -143,7 +126,7 @@
           </li>
         </ul>
 
-        <div class="b-contacts__item">
+        <div class="b-contacts__item" >
           <h4>Dubai</h4>
           <p>Office Park, Building Block A</p>
           <p>Units A301-A302</p>
@@ -174,6 +157,42 @@
     </footer>
   </div>
 </section>
+
 <script src='assets/js/main.min.js'></script>
+<script>
+var map, marker;
+  function initMap() {
+    var uluru = {lat: 44.807651, lng: 20.465785 };
+     map = new google.maps.Map(document.getElementById('b-map'), {
+      zoom:16,
+      center: uluru
+    });
+    marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  function addMarker(location) {
+     marker = new google.maps.Marker({
+         position: location,
+         map: map
+     });
+ }
+ function toBelgrade() {
+   marker.setPosition( new google.maps.LatLng( 44.807651, 20.465785 ) );
+       map.panTo( new google.maps.LatLng( 44.807651, 20.465785 ) );
+  }
+ function toDubai() {
+   marker.setPosition( new google.maps.LatLng( 25.105001, 55.168537 ) );
+       map.panTo( new google.maps.LatLng( 25.105001, 55.168537 ) );
+  }
+ function toBeirut() {
+   marker.setPosition( new google.maps.LatLng( 33.891639, 35.505467 ) );
+       map.panTo( new google.maps.LatLng( 33.891639, 35.505467 ) );
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAy9IJLq2jDIatNRw6HVCzeK3r8ZszjzH4&callback=initMap">
+</script>
 </body>
 </html>

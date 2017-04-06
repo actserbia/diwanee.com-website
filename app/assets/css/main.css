@@ -155,6 +155,9 @@ strong {
   background-repeat: no-repeat;
   background-position: center; }
 
+.text-align--left {
+  text-align: left; }
+
 .wrapper, .wrapper--medium, .wrapper--header {
   display: block;
   margin: 0 auto;
@@ -242,6 +245,38 @@ strong {
 .section--footer {
   background: #eee;
   padding-top: 7%; }
+
+@media (max-width: 1450px) {
+  .section--contact .wrapper, .section--contact .wrapper--medium, .section--contact .wrapper--header {
+    left: -10%; } }
+
+@media (max-width: 700px) {
+  .section--contact .wrapper, .section--contact .wrapper--medium, .section--contact .wrapper--header {
+    left: 0; } }
+
+.section--contact h1 {
+  margin-bottom: 10%; }
+
+.section--contact .b-division--half {
+  padding: 0; }
+  @media (max-width: 700px) {
+    .section--contact .b-division--half {
+      padding: 0 5%; } }
+
+@media (max-width: 700px) {
+  .section--contact .b-division__item:last-child {
+    margin-left: 0 !important; } }
+
+.section--contact .b-contacts__item, .section--contact .b-contacts__item:nth-of-type(3) {
+  width: 100%;
+  margin-bottom: 13%; }
+  .section--contact .b-contacts__item h4, .section--contact .b-contacts__item:nth-of-type(3) h4 {
+    margin-bottom: 3%;
+    font-family: "Playfair Display", serif; }
+
+.section--contact .b-division__item img {
+  width: 100%;
+  width: 156%; }
 
 .header {
   width: 100%;
@@ -694,6 +729,9 @@ footer {
       text-align: center;
       margin-bottom: 11%; } }
 
+.b-contact__item__button {
+  cursor: pointer; }
+
 .b-division, .b-division--half {
   display: block; }
 
@@ -716,6 +754,10 @@ footer {
   @media (max-width: 700px) {
     .b-division--half {
       padding: 0 5%; } }
+
+.b-division--flat .b-division__item {
+  padding: 0;
+  margin: 0; }
 
 .b-header-slider {
   display: block; }
@@ -1160,5 +1202,22 @@ li.b-social__item {
   border-right: 1px solid #eee;
   height: 100%; }
 
+#b-map {
+  height: 420px;
+  width: 178%; }
+  @media (max-width: 700px) {
+    #b-map {
+      width: 100%; } }
+
 .page-detail .menu-ico {
   background-image: url(../../assets/img/menu--dark.svg); }
+
+.page-contact {
+  padding-top: 10%; }
+  @media (max-width: 700px) {
+    .page-contact {
+      padding-top: 30%; }
+      .page-contact .b-contacts__item {
+        text-align: left; } }
+  .page-contact .menu-ico {
+    background-image: url(../../assets/img/menu--dark.svg); }
