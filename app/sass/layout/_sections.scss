@@ -72,12 +72,19 @@
   }
   h1 {
     margin-bottom: 10%;
+    @include breakpoint(mobile) {
+      font-size:35px;
+      margin-bottom: 15%;
+    }
   }
   .b-division--half {
     padding:0;
     @include breakpoint(mobile) {
-      padding:0 5%;
+      // padding:0 5%;
     }
+  }
+  .b-division__item:first-child {
+    padding:0 5%;
   }
   .b-division__item:last-child {
     @include breakpoint(mobile) {
