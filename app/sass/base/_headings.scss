@@ -1,10 +1,10 @@
 h1 {
-  font-size:47px;
-  line-height: 58px;
+  @include fontSize(47px);
+  @include lineHeight(58px);
   text-align: center;
   font-weight: bold;
   @include breakpoint(mobile) {
-    font-size: 23px;
+    @include fontSize(23px);
     line-height: 30px;
     padding: 0 4%;
   }
@@ -16,6 +16,8 @@ h2 {
   font-weight: bold;
   font-size: 76px;
   line-height: 23px;
+  z-index: 1;
+  position: relative;
   span {
     font-size: 23px;
     display: block;

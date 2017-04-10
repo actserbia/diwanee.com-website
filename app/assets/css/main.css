@@ -78,14 +78,45 @@ html {
 body {
   position: relative; }
 
+.elem-center {
+  display: block;
+  text-align: center; }
+  .elem-center h2 {
+    display: inline-block; }
+
+.arr-go {
+  float: right;
+  margin-right: 15px;
+  background: url(../../assets/img/arrow-visit.svg);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-ransform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 20px;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.text-align--left {
+  text-align: left; }
+
 h1 {
   font-size: 47px;
+  font-size: 2.9375rem;
   line-height: 58px;
+  line-height: 3.625rem;
   text-align: center;
   font-weight: bold; }
   @media (max-width: 700px) {
     h1 {
       font-size: 23px;
+      font-size: 1.4375rem;
       line-height: 30px;
       padding: 0 4%; } }
 
@@ -94,7 +125,9 @@ h2 {
   display: inline;
   font-weight: bold;
   font-size: 76px;
-  line-height: 23px; }
+  line-height: 23px;
+  z-index: 1;
+  position: relative; }
   h2 span {
     font-size: 23px;
     display: block;
@@ -129,34 +162,6 @@ h4 {
 
 strong {
   font-weight: bold; }
-
-.elem-center {
-  display: block;
-  text-align: center; }
-  .elem-center h2 {
-    display: inline-block; }
-
-.arr-go {
-  float: right;
-  margin-right: 15px;
-  background: url(../../assets/img/arrow-visit.svg);
-  background-size: cover;
-  width: 15px;
-  height: 15px;
-  top: 50%;
-  position: relative;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -webkit-ransform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  width: 20px;
-  background-size: 15px;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.text-align--left {
-  text-align: left; }
 
 .wrapper, .wrapper--medium, .wrapper--header {
   display: block;
@@ -555,7 +560,9 @@ footer {
     @media (max-width: 700px) {
       .b-brands h2 {
         font-size: 37px;
+        font-size: 2.3125rem;
         line-height: 15px;
+        line-height: 0.9375rem;
         margin-bottom: 15%; } }
   @media (max-width: 700px) {
     .b-brands {

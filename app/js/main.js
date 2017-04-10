@@ -10,9 +10,8 @@ $(function(){
 
     easing:'easeInOut',
     responsive: [{
-      breakpoint:1024,
+      breakpoint:640,
       settings: {
-        fade:false,
         speed:400
       }
     }]

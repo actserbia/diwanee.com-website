@@ -2,12 +2,12 @@ $assetpath: '../../assets/' !default;
 
 @import 'base/reset';
 @import 'base/breakpoints';
-@import 'base/functions';
-@import 'base/mixins';
 @import 'base/typography';
 @import 'base/init';
-@import 'base/headings';
 @import 'base/helpers';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/headings';
 
 @import 'layout/main-layout';
 @import 'layout/sections';
