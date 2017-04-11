@@ -1,6 +1,6 @@
 /**
  * @license
- * Video.js 5.19.0 <http://videojs.com/>
+ * Video.js 5.19.1 <http://videojs.com/>
  * Copyright Brightcove, Inc. <https://www.brightcove.com/>
  * Available under Apache License Version 2.0
  * <https://github.com/videojs/video.js/blob/master/LICENSE>
@@ -5779,6 +5779,7 @@ var TextTrackMenuItem = function (_MenuItem) {
     if (tracks) {
       var changeHandler = Fn.bind(_this, _this.handleTracksChange);
 
+      player.on(['loadstart', 'texttrackchange'], changeHandler);
       tracks.addEventListener('change', changeHandler);
       _this.on('dispose', function () {
         tracks.removeEventListener('change', changeHandler);
@@ -17266,7 +17267,7 @@ var Tech = function (_Component) {
       // passed in
       var script = _document2['default'].createElement('script');
 
-      script.src = this.options_['vtt.js'] || 'https://cdn.rawgit.com/gkatsev/vtt.js/vjs-v0.12.1/dist/vtt.min.js';
+      script.src = this.options_['vtt.js'] || 'https://vjs.zencdn.net/vttjs/0.12.3/vtt.min.js';
       script.onload = function () {
         /**
          * Fired when vtt.js is loaded.
@@ -17346,11 +17347,15 @@ var Tech = function (_Component) {
 
     textTracksChanges();
     tracks.addEventListener('change', textTracksChanges);
+    tracks.addEventListener('addtrack', textTracksChanges);
+    tracks.addEventListener('removetrack', textTracksChanges);
 
     this.on('dispose', function () {
       remoteTracks.off('addtrack', handleAddTrack);
       remoteTracks.off('removetrack', handleRemoveTrack);
       tracks.removeEventListener('change', textTracksChanges);
+      tracks.removeEventListener('addtrack', textTracksChanges);
+      tracks.removeEventListener('removetrack', textTracksChanges);
 
       for (var i = 0; i < tracks.length; i++) {
         var track = tracks[i];
@@ -20330,6 +20335,7 @@ var TextTrack = function (_Track) {
 
       // make sure that `id` is copied over
       cue.id = originalCue.id;
+      cue.originalCue_ = originalCue;
     }
 
     var tracks = this.tech_.textTracks();
@@ -20355,19 +20361,16 @@ var TextTrack = function (_Track) {
 
 
   TextTrack.prototype.removeCue = function removeCue(_removeCue) {
-    var removed = false;
+    var i = this.cues_.length;
 
-    for (var i = 0, l = this.cues_.length; i < l; i++) {
+    while (i--) {
       var cue = this.cues_[i];
 
-      if (cue === _removeCue) {
+      if (cue === _removeCue || cue.originalCue_ && cue.originalCue_ === _removeCue) {
         this.cues_.splice(i, 1);
-        removed = true;
+        this.cues.setCues_(this.cues_);
+        break;
       }
-    }
-
-    if (removed) {
-      this.cues.setCues_(this.cues_);
     }
   };
 
@@ -23905,7 +23908,7 @@ setup.autoSetupTimeout(1, videojs);
  *
  * @type {string}
  */
-videojs.VERSION = '5.19.0';
+videojs.VERSION = '5.19.1';
 
 /**
  * The global options object. These are the settings that take effect

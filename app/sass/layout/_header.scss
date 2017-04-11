@@ -25,6 +25,20 @@
       right: 10px;
     }
   }
+  &.dark {
+    .header__logo {
+      display: none;
+    }
+    .header__logo--dark {
+      display: block;
+    }
+    .menu-ico {
+      background-image: url(../../assets/img/menu--dark.svg);
+      &.active {
+        background-image:url(../../assets/img/close.svg);
+      }
+    }
+  }
 }
 .header-social {
   float: right;

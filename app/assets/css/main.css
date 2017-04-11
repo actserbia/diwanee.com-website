@@ -324,6 +324,14 @@ strong {
         top: 10px;
         background-size: 24px;
         right: 10px; } }
+  .header.dark .header__logo {
+    display: none; }
+  .header.dark .header__logo--dark {
+    display: block; }
+  .header.dark .menu-ico {
+    background-image: url(../../assets/img/menu--dark.svg); }
+    .header.dark .menu-ico.active {
+      background-image: url(../../assets/img/close.svg); }
 
 .header-social {
   float: right;

@@ -41,6 +41,19 @@ $(function(){
   $(".bck-to-top").click(function(){
     $("html, body").animate({"scrollTop":0},500);
   });
+
+
+//======= Header slider leave viewport events ====== //
+  var $header = $(".header");
+  $('#heading-slider').on('horizons', function(e, extra){
+    console.log("heading -----------");
+    console.log(extra.b);
+    if (extra.b === 'north'){
+      $header.addClass('dark');
+    } else if (extra.b === true){
+      $header.removeClass("dark");
+    }
+  });
   var atyab= $(".b-header-slider__item.atyab"),
       yasmina= $(".b-header-slider__item.yasmina"),
       alati= $(".b-header-slider__item.alati"),
@@ -57,10 +70,10 @@ $(function(){
 
 
       $(".b-header-slider").on("beforeChange", function(event, slick, currentSlide, nextSlide, slideCount){
-        console.log(slideCount);
+        // console.log(slideCount);
         var _this = $(".b-header-slider__item")[currentSlide];
         var _next = $(".b-header-slider__item")[nextSlide];
-        console.log("current slide: " + currentSlide);
+        // console.log("current slide: " + currentSlide);
         $(_this).find(".mask-circle").velocity({translateZ:0, rotateZ:["-=360deg", '0deg']}, 2000, 'easeInOutQuint');
         $(_next).find(".mask-circle").velocity({translateZ:0, rotateZ:["+=360deg", '0deg']}, 2000, 'easeInOutQuint');
       });
