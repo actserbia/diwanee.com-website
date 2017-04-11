@@ -52,7 +52,7 @@
   h5 {
     position: relative;
     float: left;
-    font-size: 19px;
+    @include fontSize(19px);
     font-family: $text__family--Playfair;
     margin-bottom: 4%;
     &:after {
@@ -68,8 +68,8 @@
   }
   h2 {
     clear: both;
-    font-size: 106px;
-    line-height: 117px;
+    @include fontSize(106px);
+    @include lineHeight(117px);
     @include breakpoint(typoMax) {
       font-size: cvp(106px,1600px);
       line-height: cvp(117px,1600px);
@@ -129,24 +129,23 @@
   text-align: left;
   font-family: $text__family--Roboto;
   h2 {
-    line-height: 106px;
     margin-bottom: 8%;
     display:block;
     font-weight: 500;
-    font-size: 106px;
-    line-height:117px;
+    @include fontSize(106px);
+    @include lineHeight(117px);
     @include breakpoint(typoMax) {
       font-size: cvp(106px,1600px);
       line-height: cvp(117px,1600px);
     }
     @include breakpoint(mobile) {
-      font-size: 55px;
-      line-height: 63px;
+      @include fontSize(55px);
+      @include lineHeight(63px);
     }
   }
   p {
     margin-bottom: 21%;
-    line-height: 27px;
+    @include lineHeight(27px);
     @include breakpoint(tablet) {
       margin-bottom: 5%;
     }

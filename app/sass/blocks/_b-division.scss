@@ -7,7 +7,7 @@
   margin-bottom: 40%;
   padding:0 4%;
   font-family: $text__family--Roboto;
-  line-height: 26px;
+  @include lineHeight(26px);
   font-weight: 100;
   .b-division__item {
     width: 48%;

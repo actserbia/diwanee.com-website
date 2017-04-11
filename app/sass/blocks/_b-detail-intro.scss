@@ -14,7 +14,7 @@
     }
   }
   p {
-    line-height: 33px;
+    @include lineHeight(33px);
     margin-bottom: 10%;
     text-align: center;
     padding: 0 3%;
@@ -31,7 +31,7 @@ img.b-detail-intro__logo {
 .b-detail-intro__text--Roboto {
   padding: 0 13%;
   text-align: center;
-  line-height: 30px;
+  @include lineHeight(30px);
   margin-bottom: 10%;
   font-family: $text__family--Roboto;
   color:#424242;

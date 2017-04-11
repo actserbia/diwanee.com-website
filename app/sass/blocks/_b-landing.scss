@@ -29,13 +29,13 @@
   left:-15%;
   margin-bottom: 9%;
   // p {
-    font-size: 37px;
+    @include fontSize(37px);
     font-weight: bold;
   // }
   .pre {
     position:relative;
     font-weight: normal;
-    font-size: 24px;
+    @include fontSize(24px);
     margin-bottom: 2%;
     display: block;
     float: left;
@@ -50,15 +50,15 @@
       right:-60px;
     }
     @include breakpoint(mobile) {
-      font-size: 20px;
+      @include fontSize(20px);
     }
   }
   p {
     clear:both;
-    line-height: 42px;
+    @include lineHeight(42px);
     @include breakpoint(mobile) {
-      font-size: 27px;
-      line-height: 36px;
+      @include fontSize(27px);
+      @include lineHeight(36px);
     }
   }
   @include breakpoint(tablet) {

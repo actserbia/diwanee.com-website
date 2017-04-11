@@ -5,50 +5,49 @@ h1 {
   font-weight: bold;
   @include breakpoint(mobile) {
     @include fontSize(23px);
-    line-height: 30px;
+    @include lineHeight(30px);
     padding: 0 4%;
   }
 }
 h2 {
-  // font-size: 40px;
   text-align: left;
   display: inline;
   font-weight: bold;
-  font-size: 76px;
-  line-height: 23px;
+  @include fontSize(76px);
+  @include lineHeight(23px);
   z-index: 1;
   position: relative;
   span {
-    font-size: 23px;
+    @include fontSize(23px);
     display: block;
     font-weight: 200;
   }
   @include breakpoint(mobile) {
-    font-size: 37px;
-    line-height: 15px;
+    @include fontSize(37px);
+    @include lineHeight(15px);
     margin-bottom: 15%;
     span {
-      font-size: 17px;
+      @include fontSize(17px);
       display: block;
     }
   }
 }
 h3 {
-  font-size: 32px;
-  line-height: 43px;
+  @include fontSize(32px);
+  @include lineHeight(43px);
   text-align: center;
   font-weight: 600;
   margin-bottom: 6%;
   @include breakpoint(mobile) {
-    font-size: 20px;
-    line-height: 30px;
+    @include fontSize(20px);
+    @include lineHeight(30px);
     @include breakpoint(mobile) {
       padding: 0 5%;
     }
   }
 }
 h4 {
-  font-size: 23px;
+  @include fontSize(23px);
   font-weight: bold;
   margin-bottom: 3%;
 }

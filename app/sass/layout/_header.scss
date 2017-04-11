@@ -93,7 +93,7 @@
     transform: translateY(-50%);
   }
   li {
-    font-size: 68px;
+    @include fontSize(68px);
     padding: 0.8% 0  1.5% ;
     // padding-bottom: 6px;
     cursor: pointer;
@@ -109,7 +109,7 @@
       display: block;
       margin: 24px 0;
       // max-height: 0;
-      font-size: 52px;
+      @include fontSize(52px);
       overflow: hidden;
     }
   }

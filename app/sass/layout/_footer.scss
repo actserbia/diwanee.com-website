@@ -11,7 +11,7 @@
     float: left;
     color:#95989A;
     // padding-top:2%;
-    font-size: 13px;
+    @include fontSize(13px);
     font-family: $text__family--Roboto;
     @include breakpoint(mobile) {
       text-align: center;

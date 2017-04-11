@@ -155,9 +155,9 @@
   left: 16%;
   bottom: 33%;
   width: 60%;
-  line-height: 25px;
+  @include lineHeight(25px);
   .nbr {
-    font-size: 181px;
+    @include fontSize(181px);
     position: relative;
     top: -17px;
     left: -76px;
@@ -169,11 +169,12 @@
     }
   }
   .text {
-    font-size: 24px;
-    line-height: 38px;
+    @include fontSize(24px);
+    @include lineHeight(38px);
+
     @include breakpoint(mobile) {
-      font-size: 17px;
-      line-height: 24px;
+      @include fontSize(17px);
+      @include lineHeight(24px);
       width: 80%;
       margin-left: 10%;
     }

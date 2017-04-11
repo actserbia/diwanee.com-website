@@ -118,6 +118,7 @@ h1 {
       font-size: 23px;
       font-size: 1.4375rem;
       line-height: 30px;
+      line-height: 1.875rem;
       padding: 0 4%; } }
 
 h2 {
@@ -125,38 +126,49 @@ h2 {
   display: inline;
   font-weight: bold;
   font-size: 76px;
+  font-size: 4.75rem;
   line-height: 23px;
+  line-height: 1.4375rem;
   z-index: 1;
   position: relative; }
   h2 span {
     font-size: 23px;
+    font-size: 1.4375rem;
     display: block;
     font-weight: 200; }
   @media (max-width: 700px) {
     h2 {
       font-size: 37px;
+      font-size: 2.3125rem;
       line-height: 15px;
+      line-height: 0.9375rem;
       margin-bottom: 15%; }
       h2 span {
         font-size: 17px;
+        font-size: 1.0625rem;
         display: block; } }
 
 h3 {
   font-size: 32px;
+  font-size: 2rem;
   line-height: 43px;
+  line-height: 2.6875rem;
   text-align: center;
   font-weight: 600;
   margin-bottom: 6%; }
   @media (max-width: 700px) {
     h3 {
       font-size: 20px;
-      line-height: 30px; } }
+      font-size: 1.25rem;
+      line-height: 30px;
+      line-height: 1.875rem; } }
   @media (max-width: 700px) and (max-width: 700px) {
     h3 {
       padding: 0 5%; } }
 
 h4 {
   font-size: 23px;
+  font-size: 1.4375rem;
   font-weight: bold;
   margin-bottom: 3%; }
 
@@ -264,6 +276,7 @@ strong {
   @media (max-width: 700px) {
     .section--contact h1 {
       font-size: 35px;
+      font-size: 2.1875rem;
       margin-bottom: 15%; } }
 
 .section--contact .b-division--half {
@@ -375,6 +388,7 @@ strong {
     transform: translateY(-50%); }
   .header__nav li {
     font-size: 68px;
+    font-size: 4.25rem;
     padding: 0.8% 0  1.5%;
     cursor: pointer;
     width: 100%;
@@ -389,6 +403,7 @@ strong {
         display: block;
         margin: 24px 0;
         font-size: 52px;
+        font-size: 3.25rem;
         overflow: hidden; } }
   .header__nav h5 {
     text-align: center; }
@@ -419,6 +434,7 @@ strong {
     float: left;
     color: #95989A;
     font-size: 13px;
+    font-size: 0.8125rem;
     font-family: "Roboto", sans-serif; }
     @media (max-width: 700px) {
       .footer-copy p {
@@ -497,11 +513,13 @@ footer {
   left: -15%;
   margin-bottom: 9%;
   font-size: 37px;
+  font-size: 2.3125rem;
   font-weight: bold; }
   .b-landing-info .pre {
     position: relative;
     font-weight: normal;
     font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 2%;
     display: block;
     float: left; }
@@ -516,14 +534,18 @@ footer {
       right: -60px; }
     @media (max-width: 700px) {
       .b-landing-info .pre {
-        font-size: 20px; } }
+        font-size: 20px;
+        font-size: 1.25rem; } }
   .b-landing-info p {
     clear: both;
-    line-height: 42px; }
+    line-height: 42px;
+    line-height: 2.625rem; }
     @media (max-width: 700px) {
       .b-landing-info p {
         font-size: 27px;
-        line-height: 36px; } }
+        font-size: 1.6875rem;
+        line-height: 36px;
+        line-height: 2.25rem; } }
   @media (max-width: 1025px) {
     .b-landing-info {
       left: 4%; } }
@@ -670,9 +692,11 @@ footer {
   left: 16%;
   bottom: 33%;
   width: 60%;
-  line-height: 25px; }
+  line-height: 25px;
+  line-height: 1.5625rem; }
   .b-brands__desc .nbr {
     font-size: 181px;
+    font-size: 11.3125rem;
     position: relative;
     top: -17px;
     left: -76px;
@@ -684,11 +708,15 @@ footer {
         left: 17px; } }
   .b-brands__desc .text {
     font-size: 24px;
-    line-height: 38px; }
+    font-size: 1.5rem;
+    line-height: 38px;
+    line-height: 2.375rem; }
     @media (max-width: 700px) {
       .b-brands__desc .text {
         font-size: 17px;
+        font-size: 1.0625rem;
         line-height: 24px;
+        line-height: 1.5rem;
         width: 80%;
         margin-left: 10%; } }
   @media (max-width: 700px) {
@@ -730,6 +758,7 @@ footer {
   .b-contacts__item p {
     font-family: "Roboto", sans-serif;
     line-height: 23px;
+    line-height: 1.4375rem;
     color: #95989A; }
   .b-contacts__item:nth-of-type(3) {
     width: 20%; }
@@ -745,6 +774,7 @@ footer {
 .b-contact__item__button {
   cursor: pointer;
   font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 400; }
 
 .b-division, .b-division--half {
@@ -755,6 +785,7 @@ footer {
   padding: 0 4%;
   font-family: "Roboto", sans-serif;
   line-height: 26px;
+  line-height: 1.625rem;
   font-weight: 100; }
   .b-division--half .b-division__item {
     width: 48%;
@@ -816,6 +847,7 @@ footer {
     position: relative;
     float: left;
     font-size: 19px;
+    font-size: 1.1875rem;
     font-family: "Playfair Display", serif;
     margin-bottom: 4%; }
     .b-header-slider__item__info h5:after {
@@ -830,7 +862,9 @@ footer {
   .b-header-slider__item__info h2 {
     clear: both;
     font-size: 106px;
-    line-height: 117px; }
+    font-size: 6.625rem;
+    line-height: 117px;
+    line-height: 7.3125rem; }
     @media (max-width: 1600px) {
       .b-header-slider__item__info h2 {
         font-size: 6.625vw;
@@ -883,12 +917,13 @@ footer {
   text-align: left;
   font-family: "Roboto", sans-serif; }
   .b-header-slider__item__info h2 {
-    line-height: 106px;
     margin-bottom: 8%;
     display: block;
     font-weight: 500;
     font-size: 106px;
-    line-height: 117px; }
+    font-size: 6.625rem;
+    line-height: 117px;
+    line-height: 7.3125rem; }
     @media (max-width: 1600px) {
       .b-header-slider__item__info h2 {
         font-size: 6.625vw;
@@ -896,10 +931,13 @@ footer {
     @media (max-width: 700px) {
       .b-header-slider__item__info h2 {
         font-size: 55px;
-        line-height: 63px; } }
+        font-size: 3.4375rem;
+        line-height: 63px;
+        line-height: 3.9375rem; } }
   .b-header-slider__item__info p {
     margin-bottom: 21%;
-    line-height: 27px; }
+    line-height: 27px;
+    line-height: 1.6875rem; }
     @media (max-width: 1025px) {
       .b-header-slider__item__info p {
         margin-bottom: 5%; } }
@@ -1000,7 +1038,9 @@ img.b-header-slider__item__media--mobile {
 .b-marketing-service--top {
   margin-bottom: 11%;
   line-height: 33px;
-  font-size: 20px; }
+  line-height: 2.0625rem;
+  font-size: 20px;
+  font-size: 1.25rem; }
   .b-marketing-service--top h2 {
     margin-bottom: 13%; }
   .b-marketing-service--top p {
@@ -1011,18 +1051,22 @@ img.b-header-slider__item__media--mobile {
       text-align: left; }
       .b-marketing-service--top p {
         font-size: 16px;
-        line-height: 30px; } }
+        font-size: 1rem;
+        line-height: 30px;
+        line-height: 1.875rem; } }
 
 .b-marketing-service--bottom {
   font-family: "Roboto", sans-serif;
   margin-bottom: 33%; }
   .b-marketing-service--bottom h4 {
     font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: normal;
     margin-bottom: 5%; }
   .b-marketing-service--bottom p {
     padding: 0 4%;
     line-height: 28px;
+    line-height: 1.75rem;
     font-weight: 100; }
   @media (max-width: 700px) {
     .b-marketing-service--bottom {
@@ -1031,23 +1075,27 @@ img.b-header-slider__item__media--mobile {
       .b-marketing-service--bottom h4 {
         text-align: center; }
       .b-marketing-service--bottom p {
-        font-size: 16px; } }
+        font-size: 16px;
+        font-size: 1rem; } }
 
 .b-button, .b-button--red, .b-button--transparent, .b-button--tabkha, .b-button--yasmina, .b-button--3a2ilati, .b-button--mashaheeri, .b-button--warrini, .b-button--mazyun {
   width: 220px;
   height: 50px;
   display: block;
   text-align: center;
-  line-height: 50px; }
+  line-height: 50px;
+  line-height: 3.125rem; }
   @media (max-width: 1025px) {
     .b-button, .b-button--red, .b-button--transparent, .b-button--tabkha, .b-button--yasmina, .b-button--3a2ilati, .b-button--mashaheeri, .b-button--warrini, .b-button--mazyun {
       height: 45px;
       line-height: 45px;
+      line-height: 2.8125rem;
       width: 190px; } }
   @media (max-width: 700px) {
     .b-button, .b-button--red, .b-button--transparent, .b-button--tabkha, .b-button--yasmina, .b-button--3a2ilati, .b-button--mashaheeri, .b-button--warrini, .b-button--mazyun {
       height: 50px;
-      line-height: 50px; } }
+      line-height: 50px;
+      line-height: 3.125rem; } }
 
 .b-button--red {
   background: #E5204B;
@@ -1055,7 +1103,8 @@ img.b-header-slider__item__media--mobile {
 
 .b-button--transparent {
   border: 2px solid #222;
-  line-height: 44px; }
+  line-height: 44px;
+  line-height: 2.75rem; }
   .b-button--transparent:hover {
     background: #222;
     color: white; }
@@ -1157,6 +1206,7 @@ img.b-header-slider__item__media--mobile {
         left: 5%; } }
   .b-detail-intro p {
     line-height: 33px;
+    line-height: 2.0625rem;
     margin-bottom: 10%;
     text-align: center;
     padding: 0 3%; }
@@ -1173,6 +1223,7 @@ img.b-detail-intro__logo {
   padding: 0 13%;
   text-align: center;
   line-height: 30px;
+  line-height: 1.875rem;
   margin-bottom: 10%;
   font-family: "Roboto", sans-serif;
   color: #424242;

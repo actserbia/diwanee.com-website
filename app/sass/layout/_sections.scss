@@ -73,7 +73,7 @@
   h1 {
     margin-bottom: 10%;
     @include breakpoint(mobile) {
-      font-size:35px;
+      @include fontSize(35px);
       margin-bottom: 15%;
     }
   }

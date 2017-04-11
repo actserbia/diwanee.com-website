@@ -21,7 +21,7 @@
   }
   p {
     font-family: $text__family--Roboto;
-    line-height: 23px;
+    @include lineHeight(23px);
     color:#95989A;
 }
   &:nth-of-type(3){
@@ -38,6 +38,6 @@
 }
 .b-contact__item__button {
   cursor:pointer;
-  font-size: 13px;
+  @include fontSize(13px);
   font-weight: 400;
 }
