@@ -7,12 +7,15 @@ li.b-social__item {
   width: auto;
   display: inline-block;
   text-align: center;
-  margin:8px;
+  margin:15px;
   a {
     display: block;
   }
   img {
     height: 34px;
+  }
+  &:first-child {
+    margin-left:0;
   }
   &:nth-child(2){
     img {

@@ -39,6 +39,9 @@
       }
     }
   }
+  .b-social {
+    text-align: left;
+  }
 }
 .header-social {
   float: right;
@@ -87,37 +90,51 @@
   display: block;
 }
 .header__nav {
+
   position: fixed;
   display: none;
   opacity: 0;
   width: 100%;
   height: 100vh;
+  z-index: 19;
   top:0;
   transition:opacity 400ms;
   left:0;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.97);
   // margin-top: 4%;k
   float: right;
   font-family: $text__family--Roboto;
   transition:max-height 400ms;
   &__holder {
     position: relative;
-    top: 55%;
+    top: 60%;
     overflow: hidden;
     transform: translateY(-50%);
   }
-  li {
+  .header__links:hover {
+    & > li {
+      color:#D8D8D8;
+    }
+  }
+  .header__links > li {
+    transition:color 399ms, opacity 399ms;
+    position: relative;
+    text-align: left;
     @include fontSize(68px);
-    padding: 0.8% 0  1.5% ;
+    padding: 8% 0px;
     // padding-bottom: 6px;
     cursor: pointer;
-    width: 100%;
-    text-align: center;
-    display: block;
+    // width: 100%;
+    // display: block;
     color: #222;
     font-family: $text__family--Playfair;
     font-weight: 600;
-
+    &:hover {
+      color:#222;
+      .header__submenu {
+        opacity: 1;
+      }
+    }
     @include breakpoint(mobile) {
       width: 100%;
       display: block;
@@ -128,26 +145,56 @@
     }
   }
   h5 {
-    text-align: center;
+    padding-top:20%;
+    text-align: left;
+    padding-bottom: 8%;
   }
   @include breakpoint(mobile) {
   }
   &.active {
     display: block;
     opacity: 1;
+    // transform:translateZ(110px);
 
   }
 }
 .header__links {
+  width:300px;
   margin-bottom: 5%;
+  position: relative;
+  left: 28%;
   @include breakpoint(mobile) {
     margin-bottom: 17%;
   }
-  &>li:hover {
-    background: #222;
-    color:white;
-  }
+  // &>li:hover {
+  //   background: #222;
+  //   color:white;
+  // }
   a {
     display: block;
+  }
+}
+.header__submenu {
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  transform: translateX(100%) translateY(-50%);
+  transition:opacity 399ms;
+  padding-left: 53%;
+  right: 0;
+  &>li {
+    @include fontSize(17px);
+    font-family: $text__family--Roboto;
+    font-weight: 400;
+    padding-bottom: 5%;
+    padding:10px 20px 10px 10px;
+    margin-top:10%;
+    margin-bottom:10%;
+    color:#222;
+    transition:all 399ms;
+    &:hover {
+      background: #222;
+      color:white;
+    }
   }
 }
