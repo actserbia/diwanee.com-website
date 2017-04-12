@@ -8,7 +8,7 @@ $(function(){
     autoplay:true,
     autoplaySpeed:2500,
 
-    easing:'easeInOut',
+    // easing:'easeInOut',
     responsive: [{
       breakpoint:640,
       settings: {
@@ -45,7 +45,7 @@ $(function(){
 
 //======= Header slider leave viewport events ====== //
   var $header = $(".header");
-  $('#heading-slider').on('horizons', function(e, extra){
+  $('#heading-slider').on('horizons',{offset:{b:-56}}, function(e, extra){
     console.log("heading -----------");
     console.log(extra.b);
     if (extra.b === 'north'){

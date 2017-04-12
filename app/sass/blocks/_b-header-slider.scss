@@ -87,6 +87,7 @@
   top:50%;
   z-index: 10;
   transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 
 }
 .slick-dots {
@@ -178,9 +179,11 @@ img.b-header-slider__item__media--mobile {
   // width: 151vw !important;
 
   transform-origin: center;
+  -moz-transform-origin: center;
   // transform: rotateZ(-180deg) scale(2.3) translateX(44%) translateY(-50%);
   // transform:  scale(2.7) translateX(18%) translateY(-9%);
   transform: rotateZ(52deg);
+  -moz-transform: rotateZ(52deg);
   width: 215%;
   top: -128%;
   left: -18%;

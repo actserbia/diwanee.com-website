@@ -40,6 +40,7 @@
   }
   .b-social {
     text-align: left;
+    padding-left: 8px;
   }
 }
 .header-social {
@@ -135,6 +136,7 @@
     padding-top:20%;
     text-align: left;
     padding-bottom: 8%;
+    padding-left: 8px;
   }
   @include breakpoint(mobile) {
   }
@@ -148,6 +150,8 @@
   top: 50%;
   overflow: hidden;
   transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
   left: 50%;
   width: 600px;
   margin-top: 3rem;
@@ -168,6 +172,7 @@
   position: absolute;
   top: 70%;
   transform: translateX(100%) translateY(-50%);
+  -ms-transform: translateX(100%) translateY(-50%);
   transition:opacity 399ms;
   padding-left: 53%;
   right: 0;
