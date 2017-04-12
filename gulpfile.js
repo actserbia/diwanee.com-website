@@ -21,13 +21,14 @@ gulp.task("scripts",function(){
       "app/bower_components/jquery-fadethis/src/jquery.fadethis.js",
       "app/bower_components/slick-carousel/slick/slick.js",
       "app/bower_components/horizons/horizons.js",
+      "app/bower_components/video.js/dist/video.js",
       "app/bower_components/velocity/velocity.js",
       "app/js/**/*.js", '!app/js/**/*.min.js',
 
     ])
     .pipe(concat('main.js'))
     .pipe(rename({suffix:'.min'}))
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('app/assets/js'))
     .pipe(reload({stream:true}));
 });
