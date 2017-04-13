@@ -87,24 +87,37 @@
             <p>Office Park, Building Block A</p>
             <p>Units A301-A302, Dubai Internet City</p>
             <p>T:971 4 - 434 7147</p>
-            <div class="b-contact__item__button" onClick='toDubai()'>SHOW ON MAP</div>
           </div>
+
+
+        </div>
+        <div class="b-division__item">
+           <div class='b-map'id="b-map1"></div>
+        </div>
+      </div>
+      <div class="b-division--half b-division--flat">
+        <div class="b-division__item">
           <div class="b-contacts__item" >
             <h4>Beirut</h4>
             <p>Beirut Digital District / BDD 1075</p>
             <p>2nd and 3rd floor, Bechara El Khoury</p>
              <p>T:961 1 - 660327</p>
-             <div class="b-contact__item__button"  onClick='toBeirut()'>SHOW ON MAP</div>
           </div>
+        </div>
+        <div class="b-division__item">
+           <div class='b-map'id="b-map2"></div>
+        </div>
+      </div>
+      <div class="b-division--half b-division--flat">
+        <div class="b-division__item">
           <div class="b-contacts__item" >
             <h4>Belgrade</h4>
             <p>Resavska 23, 11000 Belgrade</p>
             <p>T:381 11 - 3340 117</p>
-            <div class="b-contact__item__button"  onClick='toBelgrade()'>SHOW ON MAP</div>
           </div>
         </div>
         <div class="b-division__item">
-           <div id="b-map"></div>
+           <div class='b-map'id="b-map3"></div>
         </div>
       </div>
     </div>
@@ -160,16 +173,34 @@
 
 <script src='assets/js/main.min.js'></script>
 <script>
-var map, marker;
+var map1,map2, map3, marker1, marker2, marker3;
   function initMap() {
-    var uluru = {lat: 44.807651, lng: 20.465785 };
-     map = new google.maps.Map(document.getElementById('b-map'), {
+    var map1_pos = {lat: 25.105001, lng: 55.168537};
+     map1 = new google.maps.Map(document.getElementById('b-map1'), {
       zoom:16,
-      center: uluru
+      center: map1_pos
     });
-    marker = new google.maps.Marker({
-      position: uluru,
-      map: map
+    marker1 = new google.maps.Marker({
+      position: map1_pos,
+      map: map1
+    });
+    var map2_pos = {lat: 33.891639, lng:  35.505467 };
+     map2 = new google.maps.Map(document.getElementById('b-map2'), {
+      zoom:16,
+      center: map2_pos
+    });
+    marker2 = new google.maps.Marker({
+      position: map2_pos,
+      map: map2
+    });
+    var map3_pos = {lat: 44.807651, lng:  20.465785 };
+     map3 = new google.maps.Map(document.getElementById('b-map3'), {
+      zoom:16,
+      center: map3_pos
+    });
+    marker3 = new google.maps.Marker({
+      position: map3_pos,
+      map: map3
     });
   }
   function addMarker(location) {

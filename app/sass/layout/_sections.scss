@@ -79,6 +79,7 @@
   }
   .b-division--half {
     padding:0;
+    margin-bottom: 7%;
     @include breakpoint(mobile) {
       // padding:0 5%;
     }

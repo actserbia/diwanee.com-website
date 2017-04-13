@@ -41,7 +41,12 @@ $(function(){
   $(".bck-to-top").click(function(){
     $("html, body").animate({"scrollTop":0},500);
   });
-
+  if($(window).width()<640){
+    $('.header__nav__menu-parent').click(function(){
+      $(".header__submenu").toggleClass("active");
+      $(".submenu-arrow").toggleClass("active");
+    });
+  }
 
 //======= Header slider leave viewport events ====== //
   var $header = $(".header");
