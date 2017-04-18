@@ -36,6 +36,7 @@ $(function(){
   $(".menu-ico").click(function(){
     $(".header__nav").toggleClass("active");
     $("body").toggleClass("nav-active");
+    $("body, html").toggleClass("no-scroll");
     $(".menu-ico").toggleClass("active");
   });
   $(".bck-to-top").click(function(){
