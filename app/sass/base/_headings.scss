@@ -39,7 +39,8 @@ h3 {
   font-weight: 600;
   margin-bottom: 6%;
   @include breakpoint(mobile) {
-    @include fontSize(20px);
+    @include fontSize(30px);
+    margin-bottom: 22px;
     @include lineHeight(30px);
     @include breakpoint(mobile) {
       padding: 0 5%;

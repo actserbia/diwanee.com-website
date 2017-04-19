@@ -42,7 +42,7 @@ $(function(){
   $(".bck-to-top").click(function(){
     $("html, body").animate({"scrollTop":0},500);
   });
-  if($(window).width()<640){
+  if($(window).width()<1024){
     $('.header__nav__menu-parent').click(function(){
       $(".header__submenu").toggleClass("active");
       $(".submenu-arrow").toggleClass("active");

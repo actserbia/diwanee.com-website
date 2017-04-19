@@ -161,8 +161,9 @@ h3 {
   margin-bottom: 6%; }
   @media (max-width: 700px) {
     h3 {
-      font-size: 20px;
-      font-size: 1.25rem;
+      font-size: 30px;
+      font-size: 1.875rem;
+      margin-bottom: 22px;
       line-height: 30px;
       line-height: 1.875rem; } }
   @media (max-width: 700px) and (max-width: 700px) {
@@ -530,19 +531,25 @@ strong {
     transition: all 399ms; }
     .header__submenu > li:hover {
       color: #222; }
+    @media (max-width: 1025px) {
+      .header__submenu > li {
+        padding: 11px 0;
+        margin: 10px 8px; } }
     @media (max-width: 700px) {
       .header__submenu > li {
         margin: 0;
         padding: 13px 8px; } }
-  @media (max-width: 700px) {
+  @media (max-width: 1025px) {
     .header__submenu {
       position: relative;
       opacity: 1;
       transform: translate3d(0, 0, 0);
       left: 0;
+      display: block;
       width: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
       max-height: 0; }
       .header__submenu > li:first-child {
         padding-top: 36px; }
@@ -565,9 +572,13 @@ strong {
     transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg); }
+  @media (max-width: 1025px) {
+    .submenu-arrow {
+      display: block;
+      top: 42px; } }
   @media (max-width: 700px) {
     .submenu-arrow {
-      display: block; } }
+      top: 9px; } }
 
 .footer-copy {
   display: block;
@@ -1374,6 +1385,10 @@ img.b-header-slider__item__media--mobile {
   display: block; }
   .b-detail-intro h5 {
     text-align: center; }
+    @media (max-width: 700px) {
+      .b-detail-intro h5 {
+        font-size: 18px;
+        font-size: 1.125rem; } }
   .b-detail-intro > img {
     position: relative;
     left: -11%;
@@ -1390,11 +1405,19 @@ img.b-header-slider__item__media--mobile {
     padding: 0 5%;
     font-size: 22px;
     font-size: 1.375rem; }
+    @media (max-width: 700px) {
+      .b-detail-intro p {
+        font-size: 18px;
+        font-size: 1.125rem; } }
 
 img.b-detail-intro__logo {
   width: 40%;
   left: 30%;
   margin-bottom: 12%; }
+  @media (max-width: 700px) {
+    img.b-detail-intro__logo {
+      width: 70%;
+      left: 15%; } }
 
 .b-detail-intro__media {
   margin-bottom: 16%; }
@@ -1410,6 +1433,9 @@ p.b-detail-intro__text--Roboto {
   font-family: "Roboto", sans-serif;
   color: #424242;
   font-weight: 300; }
+  @media (max-width: 700px) {
+    p.b-detail-intro__text--Roboto {
+      margin-bottom: 20%; } }
 
 .b-social {
   text-align: center; }
