@@ -1271,6 +1271,7 @@ img.b-header-slider__item__media--mobile {
     .b-button, .b-button--red, .b-button--transparent, .b-button--tabkha, .b-button--yasmina, .b-button--3a2ilati, .b-button--mashaheeri, .b-button--warrini, .b-button--mazyun {
       height: 50px;
       width: auto;
+      padding: 0 15px;
       line-height: 50px;
       line-height: 3.125rem; } }
 
