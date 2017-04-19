@@ -521,6 +521,9 @@ strong {
   right: 0; }
   .header__submenu:hover li {
     color: #969696; }
+    @media (max-width: 700px) {
+      .header__submenu:hover li {
+        color: #222; } }
   .header__submenu > li {
     font-size: 17px;
     font-size: 1.0625rem;

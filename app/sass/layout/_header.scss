@@ -235,6 +235,9 @@
   &:hover {
     li {
       color:rgb(150, 150, 150);
+      @include breakpoint(mobile) {
+        color:#222;
+      }
     }
   }
   &>li {
