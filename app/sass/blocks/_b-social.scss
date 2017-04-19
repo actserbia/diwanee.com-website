@@ -8,6 +8,7 @@ li.b-social__item {
   display: inline-block;
   text-align: center;
   margin:15px;
+  transition:390ms;
   a {
     display: block;
   }
@@ -21,6 +22,9 @@ li.b-social__item {
     img {
       height: 30px;
     }
+  }
+  &:hover {
+    opacity: 0.6;
   }
 }
 .b-detail-intro{

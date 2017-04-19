@@ -44,6 +44,10 @@
 .footer-social__item {
   display: inline-block;
   text-align: center;
+  transition: opacity 390ms;
+  &:hover {
+    opacity: 0.6;
+  }
   a {
     display: block;
   }
