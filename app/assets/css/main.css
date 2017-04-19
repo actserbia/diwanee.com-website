@@ -329,6 +329,9 @@ strong {
     .header .menu-ico.active {
       background-image: url(../../assets/img/close.svg);
       right: 40px; }
+      @media (max-width: 1025px) {
+        .header .menu-ico.active {
+          right: 23px; } }
       @media (max-width: 700px) {
         .header .menu-ico.active {
           right: 10px; } }
@@ -423,7 +426,7 @@ strong {
   transition: max-height 400ms; }
   .header__nav .header__links:hover > li {
     color: #969696; }
-    @media (max-width: 700px) {
+    @media (max-width: 1025px) {
       .header__nav .header__links:hover > li {
         color: #222; } }
   .header__nav .header__links {
