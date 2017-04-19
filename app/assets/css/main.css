@@ -317,10 +317,14 @@ strong {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 21px;
     background-image: url(../../assets/img/menu.svg); }
     .header .menu-ico.active {
       background-image: url(../../assets/img/close.svg);
       right: 40px; }
+      @media (max-width: 700px) {
+        .header .menu-ico.active {
+          right: 10px; } }
     @media (max-width: 700px) {
       .header .menu-ico {
         display: block;
@@ -1257,6 +1261,7 @@ img.b-header-slider__item__media--mobile {
   @media (max-width: 700px) {
     .b-button, .b-button--red, .b-button--transparent, .b-button--tabkha, .b-button--yasmina, .b-button--3a2ilati, .b-button--mashaheeri, .b-button--warrini, .b-button--mazyun {
       height: 50px;
+      width: auto;
       line-height: 50px;
       line-height: 3.125rem; } }
 

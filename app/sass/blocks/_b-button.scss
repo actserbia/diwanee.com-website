@@ -11,6 +11,7 @@
   }
   @include breakpoint(mobile) {
     height: 50px;
+    width: auto;
     @include lineHeight(50px);
   }
 }
