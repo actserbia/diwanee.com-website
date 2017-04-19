@@ -259,6 +259,12 @@ strong {
 .section--detail-intro .b-button, .section--detail-intro .b-button--red, .section--detail-intro .b-button--transparent, .section--detail-intro .b-button--tabkha, .section--detail-intro .b-button--yasmina, .section--detail-intro .b-button--3a2ilati, .section--detail-intro .b-button--mashaheeri, .section--detail-intro .b-button--warrini, .section--detail-intro .b-button--mazyun {
   margin-bottom: 11%; }
 
+.section--detail-intro .b-social__item {
+  transition: opacity 399ms; }
+
+.section--detail-intro .b-social__item:hover {
+  opacity: 0.6; }
+
 .section--marketing-service {
   padding: 0 5%; }
 

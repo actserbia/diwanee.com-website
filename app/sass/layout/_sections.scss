@@ -53,6 +53,12 @@
   .b-button {
     margin-bottom: 11%;
   }
+  .b-social__item {
+    transition:opacity 399ms;
+  }
+  .b-social__item:hover {
+    opacity: 0.6;
+  }
 }
 .section--marketing-service {
   padding: 0 5%;
