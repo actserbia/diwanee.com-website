@@ -14,7 +14,7 @@
     <meta property="og:site_name" content="Diwanee">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <!-- google analytics -->
+    <!-- GA -->
     <script type="text/javascript">
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-11819255-1']);
@@ -28,9 +28,42 @@
             s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '837271083056525'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=837271083056525&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body class='page-3a2ilati page-detail'>
+    <!-- FB SDK -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1432153246844749',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <div class="b-grid__holder">
     <div class="b-grid__line"></div>
     <div class="b-grid__line"></div>
@@ -94,7 +127,7 @@
         <img src="assets/img/detail/mashaheeri-logo.svg" alt="" class='b-detail-intro__logo'>
         <p>The number one celebrity and entertainment destination that provides you with the latest news on Arab and International Celebrities as well as the latest music and movie happenings.</p>
         <img class="b-detail-intro__media" src='assets/img/detail/mashaheeri-mockup.png'>
-        <div class="elem-center"><a href='http://mashaheeri.yasmina.com/' target='_blank' class="b-button b-button--transparent">www.mashaheeri.com</a></div>
+        <div class="elem-center"><a href='http://mashaheeri.yasmina.com/' target='_blank' class="b-button b-button--transparent">mashaheeri.yasmina.com</a></div>
         <p class='b-detail-intro__text--Roboto'>Be the first to know about all your favorite stars and artists by following our daily news.</p>
         <div class="elem-center"><h5>follow Mashaheeri</h5></div>
         <ul class='b-social'>
@@ -143,6 +176,9 @@
           <h5>Let's get connected</h5>
           <ul class='footer-social'>
             <li class="footer-social__item">
+            <li class="footer-social__item">
+              <a href="mailto:info@diwanee.com" target='_blank'><img src='assets/img/social/mail-ico.svg'></a>
+            </li>
               <a href="https://www.facebook.com/Diwanee" target='_blank'><img src='assets/img/social/fb-ico.svg'></a>
             </li>
             <li class="footer-social__item">
