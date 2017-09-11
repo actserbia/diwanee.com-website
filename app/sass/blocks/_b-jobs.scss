@@ -14,9 +14,21 @@
 	display: inline-block;
 	border-radius:22px;
 	padding: 2px 30px;
+	&:hover,
+	&:focus,
+	&:active {
+		color: white;
+	}
 }
 .b-jobs__desc {
 	font-family: $text__family--Roboto;
 	font-weight: 300;
 	margin-bottom: 6.4%;
+    text-align: center;
+	@include breakpoint(mobile) {
+		margin-bottom: 10.9%;
+	  	br {
+			display: none;
+		}
+	}
 }

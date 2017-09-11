@@ -9,4 +9,10 @@
   .menu-ico {
     background-image: url(../../assets/img/menu--dark.svg);
   }
+  .header__logo {
+	display: none;
+  }
+  .header__logo--dark {
+	display: block;
+  }
 }

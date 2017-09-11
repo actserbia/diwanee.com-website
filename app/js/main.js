@@ -34,34 +34,43 @@ $(function(){
 
   });
   var nav_opened = false,
+  	  nav_animating = false,
   $mask = $(".white-mask");
   $(".menu-ico").click(function(){
-	  if (!nav_opened){
-		  nav_opened = true;
-		  $(".header__nav").css({display:"block"});
-		  $.Velocity.hook($mask, "rotateZ", "48deg");
-		  $mask.velocity({ translateY:["73%","-27%"]},699, function(){
+	  if (!nav_animating){
+		  if (!nav_opened){
+			  nav_opened = true;
+			  nav_animating = true;
+			//   $("body, html").toggleClass("no-scroll");
+				if ($(window).width() > 1024){
+				disableScroll();
+				}
+			  $(".header__nav").css({display:"block"});
+			//   $.Velocity.hook($mask, "rotateZ", "48deg");
+			  $mask.velocity({ height:["400%","10px"]},899, function(){
 
-		  });
-		  setTimeout(function(){
-			  $(".header__nav").toggleClass("active");
-			  $("body").toggleClass("nav-active");
-			  $("body, html").toggleClass("no-scroll");
-			  $(".menu-ico").toggleClass("active");
-		  },700);
-	  } else {
-		  nav_opened = false;
-		  $.Velocity.hook($mask, "rotateZ", "48deg");
-		  setTimeout(function(){
-			  $(".header__nav").toggleClass("active");
-			  $("body").toggleClass("nav-active");
-			  $("body, html").toggleClass("no-scroll");
-			  $(".menu-ico").toggleClass("active");
-		  },100);
-		  $mask.velocity({ translateY:["-27%","73%"]}, 699, function(){
+			  });
+			  setTimeout(function(){
+				  $(".header__nav").toggleClass("active");
+				  $("body").toggleClass("nav-active");
+				  $(".menu-ico").toggleClass("active");
+				  nav_animating = false;
+			  },400);
+		  } else {
+			  nav_opened = false;
+			  nav_animating = true;
+			  setTimeout(function(){
+				  $(".header__nav").toggleClass("active");
+				  $("body").toggleClass("nav-active");
 
-
-		  });
+				  $(".menu-ico").toggleClass("active");
+			  }, 350);
+			  $mask.velocity({height:["10px","400%"]}, 899, function(){
+				  enableScroll();
+				  $(".header__nav").css({display:"none"});
+				   nav_animating = false;
+			  });
+		  }
 	  }
   });
   $(".bck-to-top").click(function(){
@@ -131,4 +140,37 @@ function gridInit(){
       left = (width - grid_width) /2;
       console.log(left);
   $(".b-grid__holder").css({"left":left+'px'});
+}
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;
+}
+
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+function disableScroll() {
+  if (window.addEventListener) // older FF
+      window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+}
+
+function enableScroll() {
+    if (window.removeEventListener)
+        window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.onmousewheel = document.onmousewheel = null;
+    window.onwheel = null;
+    window.ontouchmove = null;
+    document.onkeydown = null;
 }

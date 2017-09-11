@@ -31,20 +31,25 @@
   overflow: hidden;
 }
 body.no-scroll {
-	padding-right: 15px;
+	// margin-right: 15px;
 }
 .white-mask {
 	background: rgba(255, 255, 255, 0.97);
     position: fixed;
-    width: 202%;
-    height: 236vh;
+    width: 8000px;
+    height: 10px;
     top: 0;
-    left: 0;
     z-index: 98;
-    transform: rotateZ(48deg) translateX(0%) translateY(-27%);
-    transform-origin: center center;
-    left: 47%;
-    top: -123%;
+    right: -18px;
+    // transform: rotateZ(48deg) translateX(0%) translateY(-27%);
+	transform: rotateZ(35deg) translateY(0%);
+	-ms-transform: rotateZ(35deg) translateY(0%);
+	-moz-transform: rotateZ(35deg) translateY(0%);
+	-o-transform: rotateZ(35deg) translateY(0%);
+	transform-origin: bottom right;
+    /* top: 275px; */
+    // bottom: 1000px;
+    top: 0;
 }
 .font--roboto {
 	font-family: $text__family--Roboto;

@@ -11,6 +11,26 @@
 		text-align: center;
 		padding:0;
 	    margin-bottom: 10px;
+		@include breakpoint(mobile) {
+		  width: 100%;
+			// width: auto;
+			// // float: left;
+			// // clear: both;
+			// float: left;
+		}
+	}
+	@include breakpoint(mobile) {
+		margin-top:0 !important;
+		margin-bottom: 10%;
+		position: relative;
+	    left: 0;
+	    top: 0;
+		padding-left:0;
+		ul {
+			clear: both;
+			float: left;
+
+		}
 	}
 }
 li.b-social__item {
@@ -24,9 +44,6 @@ li.b-social__item {
   }
   img {
     height: 34px;
-  }
-  &:hover {
-    opacity: 0.6;
   }
 }
 .b-detail-intro{
@@ -64,29 +81,41 @@ li.b-social__item.gplay {
 .b-social__item {
 	&.mail {
 	    margin-left: 0;
-		img {
+		img, svg {
 			height: auto;
 		    width: 15px;
 		}
 	}
 	&.fb {
-		img {
+		img, svg {
 		    height: 18px;
 		}
 	}
 	&.tw {
 	    margin-right: 0;
-		img {
+		img, svg {
 		    height: 17px;
 		}
 	}
+	&:hover {
+		.path {
+			fill:#E5204B !important;
+		}
+	}
+}
+.path {
+	transition:fill 399ms;
 }
 .b-social__button {
 	text-align: center;
     border: 1px solid #222;
 	display: block;
 	font-size: 10px;
-    padding: 9px 42px;
+    padding: 9px 41px;
     margin-top: 11px;
     display: inline-block;
+	&:hover {
+		background: black;
+		color:white;
+	}
 }

@@ -1,6 +1,17 @@
 .b-detail-intro {
   padding-top: 32%;
   display:block;
+  .b-social {
+	float: none;
+    position: relative;
+    right: auto;
+    left: 0;
+    top: 0;
+    bottom: auto;
+	.b-social__item {
+		width: auto;
+	}
+  }
   h5 {
     text-align: center;
     @include breakpoint(mobile) {

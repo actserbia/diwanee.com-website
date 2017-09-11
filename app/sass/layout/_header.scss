@@ -17,7 +17,6 @@
     background-image: url(../../assets/img/menu.svg);
     &.active {
       background-image:url(../../assets/img/close.svg);
-      right: 40px;
       @include breakpoint(tablet) {
         right:23px;
       }
@@ -53,7 +52,9 @@
     @include breakpoint(mobile) {
       margin-top: 15%;
       float: left;
-      padding-left: 9%;
+
+	  width: 140px;
+      padding: 0;
     }
   }
 }
@@ -176,25 +177,30 @@
       text-align: left;
       padding: 0;
       margin: 0;
-      padding-left: 23px;
-      margin-bottom: 22px;
-      @include fontSize(52px);
+      padding-left: 0px;
+      margin-bottom: 26px;
+      @include fontSize(36px);
       overflow: hidden;
     }
 	&:before {
 		opacity: 0;
 	    content: '';
-	    width: 58px;
+	    width: 0px;
 	    height: 6px;
 	    top: 38px;
 	    background: #E5204B;
 	    position: absolute;
 	    left: -86px;
-	    transition: opacity 399ms;
+	    transition: opacity 399ms, width 399ms;
+		@include breakpoint(tablet) {
+			display: none;
+		}
 	}
 	&:hover {
 		&:before {
 			opacity: 1;
+			width: 58px;
+
 		}
 	}
   }
@@ -232,6 +238,8 @@
 	top:50%;
 	transform:translateY(-50%);
   @include breakpoint(mobile) {
+	top: 15%;
+	transform:none;
   }
 }
 
@@ -252,17 +260,21 @@
 	&:before {
 		opacity: 0;
 	    content: '';
-	    width: 20px;
+	    width: 0px;
 	    height: 6px;
 	    top: 17px;
 	    background: #E5204B;
 	    position: absolute;
-	    left: -49px;
-	    transition: opacity 399ms;
+		left: -86px;
+	    transition: opacity 399ms, width 399ms;
+		@include breakpoint(tablet) {
+			display: none;
+		}
 	}
 	&:hover {
 		color:#E5204B;
 		&:before {
+			width: 58px;
 			opacity: 1;
 		}
 	}
@@ -271,32 +283,17 @@
 		margin-bottom: 0;
 	}
     @include breakpoint(tablet) {
-      padding: 11px 0;
-      margin: 10px 8px;
     }
     @include breakpoint(mobile) {
       margin: 0;
-      padding: 13px 8px;
+    //   padding: 13px 8px;
+	@include fontSize(16px);
     }
   }
-  @include breakpoint(tablet) {
-    position: relative;
-    opacity: 1;
-    transform:translate3d(0,0,0);
-    left:0;
-    display: block;
-    width: 100%;
-    margin:0;
-    padding: 0;
-    overflow: hidden;
-    max-height: 0;
-    &>li:first-child {
-      padding-top: 36px;
-    }
-    &.active {
-      max-height: 380px;
-    }
+  @include breakpoint(mobile) {
+	padding-top: 13px;
   }
+
 }
 .submenu-arrow {
   display: none;
