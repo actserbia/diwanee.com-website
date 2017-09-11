@@ -2,26 +2,28 @@
   text-align: center;
   // margin-bottom: 11%;
   // padding-top: 4%;
+	float: left;
+	position: absolute;
+	right: 10%;
+	bottom: 0;
+	h5 {
+		font-family: $text__family--Playfair;
+		text-align: center;
+		padding:0;
+	    margin-bottom: 10px;
+	}
 }
 li.b-social__item {
-  width: auto;
   display: inline-block;
   text-align: center;
   margin:15px;
   transition:390ms;
+  width: 24px;
   a {
     display: block;
   }
   img {
     height: 34px;
-  }
-  &:first-child {
-    margin-left:0;
-  }
-  &:nth-child(2){
-    img {
-      height: 30px;
-    }
   }
   &:hover {
     opacity: 0.6;
@@ -54,4 +56,37 @@ li.b-social__item.app-store {
 li.b-social__item.gplay {
   margin:15px;
   margin-left:0;
+}
+.b-social__items {
+	border-bottom: 1px solid #222;
+	margin-bottom: 24px;
+}
+.b-social__item {
+	&.mail {
+	    margin-left: 0;
+		img {
+			height: auto;
+		    width: 15px;
+		}
+	}
+	&.fb {
+		img {
+		    height: 18px;
+		}
+	}
+	&.tw {
+	    margin-right: 0;
+		img {
+		    height: 17px;
+		}
+	}
+}
+.b-social__button {
+	text-align: center;
+    border: 1px solid #222;
+	display: block;
+	font-size: 10px;
+    padding: 9px 42px;
+    margin-top: 11px;
+    display: inline-block;
 }
