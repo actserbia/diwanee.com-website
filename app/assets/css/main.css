@@ -566,6 +566,9 @@ strong {
           display: none; } }
     .header__submenu > li:hover {
       color: #E5204B; }
+      @media (max-width: 1025px) {
+        .header__submenu > li:hover {
+          color: #222; } }
       .header__submenu > li:hover:before {
         width: 58px;
         opacity: 1; }

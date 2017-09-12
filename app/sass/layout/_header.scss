@@ -247,9 +247,6 @@
 
 .header__submenu {
 	padding-top: 8%;
-  &:hover {
-
-  }
   &>li {
     @include fontSize(18px);
     font-family: $text__family--Roboto;
