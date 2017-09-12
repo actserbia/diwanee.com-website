@@ -470,8 +470,10 @@ strong {
     font-family: "Playfair Display", serif;
     font-weight: 600; }
     .header__nav .header__links > li:hover {
-      color: #222;
       color: #E5204B; }
+      @media (max-width: 1025px) {
+        .header__nav .header__links > li:hover {
+          color: #222; } }
       .header__nav .header__links > li:hover .header__submenu {
         opacity: 1;
         display: block; }

@@ -163,8 +163,10 @@
     font-family: $text__family--Playfair;
     font-weight: 600;
     &:hover {
-      color:#222;
 	    color:#E5204B;
+		@include breakpoint(tablet) {
+			color:#222;
+		}
       .header__submenu {
         opacity: 1;
         display: block;
