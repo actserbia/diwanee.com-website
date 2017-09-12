@@ -41,12 +41,12 @@ $(function(){
 		  if (!nav_opened){
 			  nav_opened = true;
 			  nav_animating = true;
-			//   $("body, html").toggleClass("no-scroll");
 				if ($(window).width() > 1024){
-				disableScroll();
+					disableScroll();
+				} else {
+					$("body, html").toggleClass("no-scroll");
 				}
 			  $(".header__nav").css({display:"block"});
-			//   $.Velocity.hook($mask, "rotateZ", "48deg");
 			  $mask.velocity({ height:["400%","10px"]},899, function(){
 
 			  });
@@ -67,6 +67,7 @@ $(function(){
 			  }, 350);
 			  $mask.velocity({height:["10px","400%"]}, 899, function(){
 				  enableScroll();
+				  $("body, html").removeClass("no-scroll");
 				  $(".header__nav").css({display:"none"});
 				   nav_animating = false;
 			  });
