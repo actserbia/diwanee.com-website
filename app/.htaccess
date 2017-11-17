@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^static/(.*) showeel/static/$1
