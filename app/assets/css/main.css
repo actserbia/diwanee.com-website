@@ -273,9 +273,83 @@ strong {
     @media (max-width: 700px) {
       .section--showreel h2 {
         margin-bottom: 15.6%; } }
+  .section--showreel a {
+    display: block;
+    width: 100%;
+    position: relative; }
+    .section--showreel a .wrapper--medium--main-img {
+      display: block;
+      width: 100%; }
+    .section--showreel a .wrapper--medium--tw {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-ransform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      width: 100%; }
+      .section--showreel a .wrapper--medium--tw .wrapper--medium--txt {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 5%; }
+      .section--showreel a .wrapper--medium--tw .wrapper--medium--button {
+        color: white;
+        background-color: #E5204B;
+        font-family: "Roboto", sans-serif;
+        font-size: 1.5rem;
+        padding: 1.6rem 5rem 1.6rem 1.8rem;
+        white-space: nowrap;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 300px; }
+        .section--showreel a .wrapper--medium--tw .wrapper--medium--button .arr-go {
+          vertical-align: middle;
+          display: inline-block;
+          height: 2rem;
+          width: 1.5rem;
+          float: none;
+          background-size: 100% 100%;
+          position: absolute;
+          right: .9rem; }
   @media (max-width: 700px) {
     .section--showreel {
-      margin-bottom: 47%; } }
+      margin-bottom: 47%; }
+      .section--showreel a .wrapper--medium--tw {
+        height: 100%; }
+        .section--showreel a .wrapper--medium--tw .wrapper--medium--txt {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -webkit-ransform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          margin-bottom: 0;
+          width: 90%;
+          font-size: 1.2rem;
+          line-height: 1.6rem; }
+        .section--showreel a .wrapper--medium--tw .wrapper--medium--button {
+          position: absolute;
+          top: 115%;
+          left: 10%;
+          right: 10%;
+          margin: 0;
+          width: auto;
+          font-size: 1rem;
+          text-align: center;
+          padding-top: .8rem;
+          padding-bottom: .8rem; }
+          .section--showreel a .wrapper--medium--tw .wrapper--medium--button .arr-go {
+            height: .8rem;
+            width: .8rem; } }
 
 .section--detail-intro .b-button, .section--detail-intro .b-button--red, .section--detail-intro .b-button--transparent, .section--detail-intro .b-button--tabkha, .section--detail-intro .b-button--yasmina, .section--detail-intro .b-button--3a2ilati, .section--detail-intro .b-button--mashaheeri, .section--detail-intro .b-button--warrini, .section--detail-intro .b-button--mazyun {
   margin-bottom: 11%; }

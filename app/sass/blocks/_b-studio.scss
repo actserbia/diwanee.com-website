@@ -1,0 +1,78 @@
+.b-studio {
+  display: block;
+  width: 100%;
+  position: relative;
+  .wrapper--medium--main-img {
+    display: block;
+    width: 100%;
+  }
+  .wrapper--medium--tw {
+    @include center;
+    width: 100%;
+    .wrapper--medium--txt {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      margin-bottom: 5%;
+    }
+    .wrapper--medium--button {
+      color: white;
+      background-color: #E5204B;
+      font-family: $text__family--Roboto;
+      font-size: 1.5rem;
+      padding: 1.6rem 5rem 1.6rem 1.8rem;
+      white-space: nowrap;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      .arr-go {
+        vertical-align: middle;
+        display: inline-block;
+        height: 2rem;
+        width: 1.5rem;
+        float: none;
+        background-size: 100% 100%;
+        position: absolute;
+        //top: 0;
+        right: .9rem;
+        //bottom: 0;
+        //height: auto;
+      }
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .b-studio {
+    .wrapper--medium--tw {
+      height: 100%;
+      .wrapper--medium--txt {
+        @include center;
+        margin-bottom: 0;
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+      .wrapper--medium--button {
+        position: absolute;
+        top: 115%;
+        left: 10%;
+        right: 10%;
+        margin: 0;
+        width: auto;
+        font-size: 1rem;
+        text-align: center;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        .arr-go {
+          height: .8rem;
+          width: .8rem;
+        }
+      }
+    }
+  }
+}
