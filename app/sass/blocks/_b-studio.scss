@@ -9,6 +9,7 @@
   .wrapper--medium--tw {
     @include center;
     width: 100%;
+    text-align: center;
     .wrapper--medium--txt {
       color: white;
       font-size: 3rem;
@@ -23,24 +24,21 @@
       background-color: #E5204B;
       font-family: $text__family--Roboto;
       font-size: 1.5rem;
-      padding: 1.6rem 5rem 1.6rem 1.8rem;
+      padding: 1.6rem 1.8rem;
       white-space: nowrap;
       position: relative;
-      display: block;
+      display: inline-block;
       margin: 0 auto;
-      width: 300px;
-      .arr-go {
+      width: auto;
+      .arrr {
+        background: url(../../assets/img/arrow-visit.svg);
         vertical-align: middle;
         display: inline-block;
-        height: 2rem;
-        width: 1.5rem;
-        float: none;
+        $size: 1.2rem;
+        height: $size;
+        width: $size;
         background-size: 100% 100%;
-        position: absolute;
-        //top: 0;
-        right: .9rem;
-        //bottom: 0;
-        //height: auto;
+        margin-left: 3rem;
       }
     }
   }
@@ -64,13 +62,18 @@
         right: 10%;
         margin: 0;
         width: auto;
-        font-size: 1rem;
+        font-size: .85rem;
         text-align: center;
         padding-top: .8rem;
         padding-bottom: .8rem;
-        .arr-go {
-          height: .8rem;
-          width: .8rem;
+        .arrr {
+          position: absolute;
+          @include center;
+          right: 4%;
+          left: auto;
+          $size: .65rem;
+          height: $size;
+          width: $size;
         }
       }
     }
