@@ -1,0 +1,1 @@
+rsync -avz ./app/ ubuntu@diwanee-serbia.rs:/var/www/diwaneecorp.com/httpdocs/
